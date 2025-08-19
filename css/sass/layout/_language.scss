@@ -1,0 +1,77 @@
+.language-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: $textColor;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+  i {
+    margin-inline-end: 2px;
+    font-size: 16px;
+  }
+  &:after {
+    content: "\f107";
+    font-family: "Font Awesome 6 Pro";
+    font-weight: 300;
+    font-size: 8px;
+  }
+}
+.language-list {
+  position: absolute;
+  inset-inline-start: -20px;
+  top: calc(100% + 10px);
+  box-shadow: 0px 3px 10px #0000001a;
+  background-color: #fff;
+  border-radius: 10px;
+  min-width: 120px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+  &::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 23px;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+    border-top: 0;
+  }
+  li {
+    width: 100%;
+  }
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    padding: 0 19px;
+    align-items: center;
+    @include focus($textColor);
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+}
+
+.language-content {
+  position: relative;
+
+  &:hover {
+    .language-btn {
+      color: $primaryColor;
+    }
+    .language-list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

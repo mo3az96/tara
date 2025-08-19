@@ -1,0 +1,52 @@
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: #fff;
+  background-color: $primaryColor;
+  padding: 54px 80px 69px;
+  @include sm {
+    gap: 20px;
+    padding: 30px 40px;
+  }
+  @include xs {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+
+.banner-title {
+  width: 100%;
+  max-width: 452px;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.617;
+  margin: 0;
+  @include sm {
+    font-size: 24px;
+  }
+}
+
+.banner-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 22px;
+  min-width: 189px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  font-size: 20px;
+  font-weight: 700;
+  flex-shrink: 0;
+  @include focus($primaryColor);
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+}

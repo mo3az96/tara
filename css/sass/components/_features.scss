@@ -1,0 +1,65 @@
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  @include md {
+    gap: 20px 15px;
+  }
+  @include sm {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  @include sm {
+    flex-direction: column;
+    gap: 20px 15px;
+  }
+}
+
+.feature-item {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  color: $textColor;
+  padding: 30px 32px 39px;
+  @include sm {
+    min-width: calc(100% / 2 - 15px);
+    flex: 1;
+  }
+  @include xs {
+    min-width: unset;
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    color: $secondaryColor;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.65;
+    margin: 0 0 10px;
+    @include md {
+      font-size: 18px;
+    }
+    @include sm {
+      font-size: 20px;
+    }
+  }
+  .desc {
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+    @include md {
+      font-size: 14px;
+    }
+    @include sm {
+      font-size: 16px;
+    }
+  }
+}

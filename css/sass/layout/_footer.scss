@@ -1,0 +1,128 @@
+.footer-section {
+  padding: 65px 0 71px;
+  background-color: #343434;
+  color: #fff;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include xs {
+    padding: 40px 0 45px;
+  }
+}
+.footer {
+  margin-bottom: 56px;
+  @include xs {
+    margin-bottom: 35px;
+  }
+}
+.footer-logo {
+  width: 100%;
+  max-width: 53px;
+  aspect-ratio: 53/54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  @include sm {
+    margin: 0 auto 20px;
+  }
+}
+
+.footer-desc {
+  width: 100%;
+  max-width: 428px;
+  font-size: 13px;
+  line-height: 2.077;
+  margin: 0;
+  @include sm {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.footer-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.57;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.footer-menu {
+  margin-bottom: 32px;
+  padding-top: 12px;
+  @include sm {
+    padding-top: 40px;
+  }
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  a {
+    font-size: 13px;
+    line-height: 1.615;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    @include focus(#fff);
+    i {
+      font-size: 14px;
+    }
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+}
+.social {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  @include focus(#fff);
+  i {
+    font-size: 14px;
+  }
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+.last-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include xs {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .copyrights {
+    color: #c2c2c2;
+    font-size: 11px;
+    margin: 0;
+  }
+  .tasawk {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      @include focus(#fff);
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.buttons-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.default-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 22px;
+  min-width: 135px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: $primaryColor;
+  font-size: 16px;
+  font-weight: 700;
+  @include focus(#fff);
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+}
+
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 22px;
+  min-width: 135px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(#c2c2c2, 0.1);
+  font-size: 16px;
+  font-weight: 700;
+  @include focus(#c2c2c2);
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+}

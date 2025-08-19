@@ -1,0 +1,91 @@
+body {
+  padding-top: 90px;
+  @include xs {
+    padding-top: 66px;
+  }
+}
+header {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 0;
+  @include sm {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 0;
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 53px;
+  aspect-ratio: 53/54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    margin-inline-end: auto;
+  }
+  @include xs {
+    max-width: 45px;
+  }
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  @include xs {
+    gap: 15px;
+  }
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 22px;
+  width: fit-content;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $primaryColor;
+  font-size: 14px;
+  font-weight: 700;
+  @include focus(#fff);
+  i {
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+}
+
+.menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  @include focus($textColor);
+
+  @include sm {
+    display: flex;
+  }
+}
