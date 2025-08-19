@@ -1,0 +1,7 @@
+.testimonials_page-testimonials {
+  overflow: unset;
+  margin: 60px 0 120px;
+  @include xs {
+    margin: 45px 0 70px;
+  }
+}

@@ -18,6 +18,17 @@
     }
   }
 }
+
+.testimonials-list {
+  columns: 2;
+  gap: 30px;
+  @include xs {
+    columns: unset;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 .testimonial-item {
   background-color: #fff;
   box-shadow: 0px 3px 10px #0000001a;
@@ -76,6 +87,18 @@
       font-size: 16px;
       height: 168px;
       -webkit-line-clamp: 6;
+    }
+  }
+
+  .testimonials-list & {
+    margin-bottom: 30px;
+    .title,
+    .desc {
+      display: block;
+      height: auto;
+    }
+    @include xs {
+      margin: 0;
     }
   }
 }
