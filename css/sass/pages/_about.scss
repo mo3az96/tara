@@ -1,0 +1,93 @@
+.about_page-main {
+  margin: 80px 0 134px;
+  .section-head {
+    margin-bottom: 60px;
+  }
+  @include xs {
+    margin: 50px 0 70px;
+    .section-head {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.about_feature-item {
+  flex: 1;
+  min-width: calc(50% - 15px);
+  padding: 50px 51px 53px;
+  background-color: #fff7f3;
+  @include md {
+    padding: 30px;
+  }
+  @include sm {
+    min-width: 100%;
+  }
+  @include xs {
+    padding: 30px;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+    font-size: 48px;
+    color: $secondaryColor;
+    line-height: 1;
+    margin-bottom: 20px;
+    @include xs {
+      font-size: 40px;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    @include md {
+      font-size: 20px;
+    }
+    @include sm {
+      font-size: 24px;
+    }
+    @include md {
+      font-size: 20px;
+    }
+  }
+  .desc {
+    font-size: 20px;
+    line-height: 1.75;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 140px;
+    margin: 0;
+    @include md {
+      height: 112px;
+      font-size: 16px;
+    }
+    @include sm {
+      height: auto;
+      display: block;
+      font-size: 20px;
+    }
+    @include xs {
+      font-size: 16px;
+    }
+  }
+}
+.about_page-features {
+  padding: 100px 0 130px;
+  .section-head {
+    margin-bottom: 40px;
+  }
+  @include xs {
+    padding: 50px 0 70px;
+    .section-head {
+      margin-bottom: 30px;
+    }
+  }
+}

@@ -2,8 +2,13 @@ $(window).on("load", function () {
   $("body").removeClass("overflow");
 });
 $(document).ready(function () {
+  $(window).scroll(function () {
+    $(this).scrollTop() >= 150
+      ? $("header.main-header").addClass("fixed")
+      : $("header.main-header").removeClass("fixed ");
+  });
   /***** Menu *****/
-  if ($(window).width() <= 767) {
+  if ($(window).width() <= 991) {
     $(".menu-btn").click(function () {
       $(".header-nav").addClass("active");
       $("body").addClass("overflow");
@@ -21,7 +26,7 @@ $(document).ready(function () {
     spaceBetween: 20,
     loop: true,
     autoplay: {
-      delay: 5000,
+      delay: 10000,
     },
     pagination: {
       el: ".main-slider .swiper-pagination",

@@ -4,13 +4,14 @@ body {
     padding-top: 66px;
   }
 }
-header {
+.main-header {
   background-color: #fff;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99;
+  transition: all 0.3s ease-in-out;
 }
 
 .header {
@@ -19,6 +20,7 @@ header {
   align-items: center;
   gap: 18px;
   padding: 18px 0;
+  transition: all 0.3s ease-in-out;
   @include sm {
     display: flex;
     justify-content: space-between;
@@ -34,6 +36,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease-in-out;
   @include sm {
     margin-inline-end: auto;
   }
@@ -87,5 +90,24 @@ header {
 
   @include sm {
     display: flex;
+  }
+}
+
+.main-header {
+  &.fixed {
+    position: fixed;
+    box-shadow: 0px 3px 10px #0000001a;
+    .header {
+      padding: 15px 0;
+      @include sm {
+        padding: 10px 0;
+      }
+    }
+    .logo {
+      max-width: 45px;
+      @include xs {
+        max-width: 40px;
+      }
+    }
   }
 }
