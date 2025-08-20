@@ -75,6 +75,14 @@ body {
     background-color: $secondaryColor;
     color: #fff;
   }
+  &.account-btn {
+    background-color: rgba($primaryColor, 0.1);
+    @include focus($primaryColor);
+    &:hover {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+  }
 }
 
 .menu-btn {

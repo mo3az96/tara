@@ -8,7 +8,6 @@
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 98;
   display: none;
-  // display: block;
 }
 .nav-head {
   display: none;
@@ -44,7 +43,6 @@
     position: fixed;
     top: 0;
     inset-inline-start: -300px;
-    // inset-inline-start: 0;
     height: 100dvh;
     width: 300px;
     background-color: #fff;

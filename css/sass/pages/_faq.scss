@@ -1,0 +1,98 @@
+.faq-section {
+  margin: 20px 0 150px;
+  @include xs {
+    margin: 20px 0 70px;
+  }
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-item {
+  padding: 27px 30px 29px;
+  box-shadow: 0px 3px 10px #0000001a;
+  border-radius: 10px;
+  @include xs {
+    padding: 15px 15px;
+  }
+  .faq-header {
+    padding-bottom: 0;
+    width: 100%;
+  }
+  .accordion-button {
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+    font-weight: 700;
+    color: $textColor;
+    line-height: 1.66666667;
+    transition: all 0.3s ease-in-out;
+    @include sm {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+    &::after,
+    &:before {
+      font-family: "Font Awesome 6 pro";
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      width: 33px;
+      height: 30px;
+      flex-shrink: 0;
+      transition: all 0.3s ease-in-out;
+
+      @include sm {
+        font-size: 16px;
+        width: 30px;
+        height: 24px;
+      }
+    }
+
+    &::before {
+      color: $secondaryColor;
+      content: "\f060";
+      justify-content: flex-start;
+      @include ltr {
+        content: "\f061";
+      }
+    }
+    &::after {
+      color: #c2c2c2;
+      justify-content: flex-end;
+      content: "\2b";
+    }
+    &:not(.collapsed) {
+      // color: $primaryColor;
+      // &::after,
+      // &:before {
+      //   color: $primaryColor;
+      // }
+      &::after {
+        content: "\f068";
+      }
+    }
+  }
+  .faq-body {
+    padding: 11px 33px 6px;
+    @include sm {
+      padding: 8px 30px 0;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.782;
+      color: $textColor;
+      margin: 0 0 25px;
+      @include sm {
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}

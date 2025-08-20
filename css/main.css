@@ -794,6 +794,18 @@ body {
   background-color: #F75D1B;
   color: #fff;
 }
+.header-btn.account-btn {
+  background-color: rgba(220, 40, 41, 0.1);
+  color: #DC2829;
+  transition: all 0.3s ease-in-out;
+}
+.header-btn.account-btn:focus {
+  color: #DC2829;
+}
+.header-btn.account-btn:hover {
+  background-color: #F75D1B;
+  color: #fff;
+}
 
 .menu-btn {
   display: none;
@@ -1000,6 +1012,9 @@ body {
 
 .cover-section {
   margin: 30px 0;
+}
+:has(.faq-section) .cover-section {
+  margin-bottom: 20px;
 }
 .cover-section :last-child {
   margin-bottom: 0;
@@ -1551,4 +1566,107 @@ body {
   .testimonials_page-testimonials {
     margin: 45px 0 70px;
   }
+}
+
+.faq-section {
+  margin: 20px 0 150px;
+}
+@media (max-width: 767px) {
+  .faq-section {
+    margin: 20px 0 70px;
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq-item {
+  padding: 27px 30px 29px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .faq-item {
+    padding: 15px 15px;
+  }
+}
+.faq-item .faq-header {
+  padding-bottom: 0;
+  width: 100%;
+}
+.faq-item .accordion-button {
+  display: flex;
+  align-items: flex-start;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.66666667;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .faq-item .accordion-button {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+}
+.faq-item .accordion-button::after, .faq-item .accordion-button:before {
+  font-family: "Font Awesome 6 pro";
+  font-weight: 400;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  width: 33px;
+  height: 30px;
+  flex-shrink: 0;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .faq-item .accordion-button::after, .faq-item .accordion-button:before {
+    font-size: 16px;
+    width: 30px;
+    height: 24px;
+  }
+}
+.faq-item .accordion-button::before {
+  color: #F75D1B;
+  content: "\f060";
+  justify-content: flex-start;
+}
+html[dir=ltr] .faq-item .accordion-button::before {
+  content: "\f061";
+}
+.faq-item .accordion-button::after {
+  color: #c2c2c2;
+  justify-content: flex-end;
+  content: "+";
+}
+.faq-item .accordion-button:not(.collapsed)::after {
+  content: "\f068";
+}
+.faq-item .faq-body {
+  padding: 11px 33px 6px;
+}
+@media (max-width: 991px) {
+  .faq-item .faq-body {
+    padding: 8px 30px 0;
+  }
+}
+.faq-item .faq-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.782;
+  color: #000000;
+  margin: 0 0 25px;
+}
+@media (max-width: 991px) {
+  .faq-item .faq-body p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+.faq-item .faq-body :last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=main.css.map */
