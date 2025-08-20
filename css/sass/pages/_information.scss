@@ -1,0 +1,102 @@
+.information-content {
+  display: grid;
+  grid-template-columns: 23637fr 10000fr;
+  gap: 30px;
+  align-items: flex-start;
+  @include sm {
+    grid-template-columns: 1fr;
+  }
+}
+.information-description {
+  h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: $textColor;
+    line-height: 1.6666667;
+    margin: 0 0 11px;
+    @include sm {
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+  }
+  p,
+  ul {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8542;
+    color: $textColor;
+    margin: 0 0 20px;
+    @include sm {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.side-nav {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px #0000001a;
+  border-radius: 10px;
+  padding: 30px 30px;
+  overflow: hidden;
+  position: sticky;
+  top: 92px;
+  @include sm {
+    display: none;
+  }
+  .nav-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: $textColor;
+    line-height: 1.666667;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;
+    margin-bottom: 19px;
+  }
+  .nav-body {
+    li {
+      padding-bottom: 17px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid #e8e8e8;
+      &:last-of-type {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border-bottom: none;
+      }
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $textColor;
+      line-height: 1.57142857;
+      transition: all 0.3s ease-in-out;
+      &::before {
+        font-family: "Font Awesome 6 Pro";
+        font-weight: 400;
+        content: "\f060";
+        font-size: 12px;
+        color: $secondaryColor;
+        transition: all 0.3s ease-in-out;
+        @include ltr {
+          content: "\f061";
+        }
+      }
+    //   &:hover,
+    //   &.active {
+    //     color: $primaryColor;
+    //     &::before {
+    //       color: $primaryColor;
+    //     }
+    //   }
+    }
+  }
+}

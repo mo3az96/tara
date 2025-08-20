@@ -1669,4 +1669,106 @@ html[dir=ltr] .faq-item .accordion-button::before {
 }
 .faq-item .faq-body :last-child {
   margin-bottom: 0;
+}
+
+.information-content {
+  display: grid;
+  grid-template-columns: 23637fr 10000fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+@media (max-width: 991px) {
+  .information-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.information-description h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.6666667;
+  margin: 0 0 11px;
+}
+@media (max-width: 991px) {
+  .information-description h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+}
+.information-description p,
+.information-description ul {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8542;
+  color: #000000;
+  margin: 0 0 20px;
+}
+@media (max-width: 991px) {
+  .information-description p,
+  .information-description ul {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+}
+.information-description :last-child {
+  margin-bottom: 0;
+}
+
+.side-nav {
+  background-color: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 10px;
+  padding: 30px 30px;
+  overflow: hidden;
+  position: sticky;
+  top: 92px;
+}
+@media (max-width: 991px) {
+  .side-nav {
+    display: none;
+  }
+}
+.side-nav .nav-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  line-height: 1.666667;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+  margin-bottom: 19px;
+}
+.side-nav .nav-body li {
+  padding-bottom: 17px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.side-nav .nav-body li:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.side-nav .nav-body a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+  line-height: 1.57142857;
+  transition: all 0.3s ease-in-out;
+}
+.side-nav .nav-body a::before {
+  font-family: "Font Awesome 6 Pro";
+  font-weight: 400;
+  content: "\f060";
+  font-size: 12px;
+  color: #F75D1B;
+  transition: all 0.3s ease-in-out;
+}
+html[dir=ltr] .side-nav .nav-body a::before {
+  content: "\f061";
 }/*# sourceMappingURL=main.css.map */
