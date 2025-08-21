@@ -1,0 +1,197 @@
+/* group */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0 28px;
+  .full-w {
+    grid-column: 1/-1;
+  }
+  @include md {
+    gap: 0 12px;
+  }
+  @include sm {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 25px;
+  }
+  @include xs {
+    grid-template-columns: 1fr;
+  }
+}
+.form-group {
+  margin: 0 0 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  &:has(.form-error) {
+    .form-control {
+      border-color: #e24a56;
+    }
+    .form-label {
+      color: #e24a56;
+    }
+  }
+  &:has(.form-control:disabled) {
+    opacity: 0.5;
+  }
+  @include xs {
+    margin-bottom: 25px;
+  }
+}
+
+/* label & error */
+.form-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: $textColor;
+  line-height: 1.57142857;
+  padding: 0 20px;
+  margin: 0 0 7px;
+}
+.form-error {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  margin: 2px 0 0;
+  color: #e24a56;
+}
+
+/* input */
+.form-control {
+  width: 100%;
+  height: 48px;
+  background-color: #fff;
+  border: 1px solid #dee1e6;
+  border-radius: 24px;
+  padding: 0 25px;
+  font-size: 14px;
+  font-weight: 500;
+  color: $textColor;
+  direction: rtl;
+  resize: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  @include ltr {
+    direction: ltr;
+  }
+  &:is(textarea) {
+    height: 90px;
+    line-height: 1.57142857;
+    padding: 13px 20px;
+  }
+  option {
+    font-size: 14px;
+    font-weight: 500;
+    color: $textColor;
+  }
+  &::placeholder,
+  &:has([hidden]:checked) {
+    font-size: 14px;
+    font-weight: 400;
+    color: #c2c2c2;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: $primaryColor;
+    &:is(select) {
+      border-color: #dee1e6;
+    }
+  }
+  &:disabled {
+    background-color: #fff;
+  }
+}
+.form-group {
+  &:has([type="tel"]) {
+    direction: ltr;
+    @include rtl {
+      .form-control {
+        direction: ltr;
+        text-align: right;
+      }
+      .form-label,
+      .form-error {
+        width: 100%;
+        text-align: right;
+      }
+    }
+  }
+}
+.intl-tel-input {
+  width: 100%;
+  .flag-container {
+    .selected-flag {
+      display: flex;
+      align-items: center;
+      width: auto !important;
+      padding: 0;
+      padding-left: 13px;
+      padding-right: 6px;
+      background-color: transparent !important;
+      .iti-flag {
+        position: relative;
+        inset: unset;
+        margin: 0;
+      }
+      .selected-dial-code {
+        padding: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: $textColor;
+        margin-left: 7px;
+      }
+      .iti-arrow {
+        position: relative;
+        inset: unset;
+        border: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        color: $textColor;
+        margin-left: 7px;
+        &::before {
+          content: "\f078";
+          font-family: "Font Awesome 6 pro";
+          font-weight: 400;
+          font-size: 8px;
+        }
+      }
+    }
+    .country-list {
+      &::-webkit-scrollbar {
+        background-color: #f1f1f1;
+        width: 4px;
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $primaryColor;
+        border-radius: 3px;
+      }
+
+      scrollbar-width: thin;
+      scrollbar-color: $primaryColor #f1f1f1;
+      .country {
+        font-size: 13px;
+        font-weight: 400;
+        color: $textColor;
+        .flag-box {
+          margin-right: 7px;
+        }
+        .country-name {
+          margin-right: 7px;
+        }
+        .dial-code {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .form-control {
+    padding-right: 20px !important;
+  }
+}

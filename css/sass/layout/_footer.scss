@@ -87,9 +87,6 @@
   display: inline-flex;
   align-items: center;
   @include focus(#fff);
-  i {
-    font-size: 14px;
-  }
   &:hover {
     color: $secondaryColor;
   }

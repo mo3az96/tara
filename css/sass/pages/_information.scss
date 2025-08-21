@@ -1,3 +1,9 @@
+.information-section {
+  margin: 30px 0 150px;
+  @include xs {
+    margin: 30px 0 80px;
+  }
+}
 .information-content {
   display: grid;
   grid-template-columns: 23637fr 10000fr;
@@ -90,13 +96,13 @@
           content: "\f061";
         }
       }
-    //   &:hover,
-    //   &.active {
-    //     color: $primaryColor;
-    //     &::before {
-    //       color: $primaryColor;
-    //     }
-    //   }
+      //   &:hover,
+      //   &.active {
+      //     color: $primaryColor;
+      //     &::before {
+      //       color: $primaryColor;
+      //     }
+      //   }
     }
   }
 }

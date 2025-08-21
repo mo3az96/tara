@@ -1,0 +1,80 @@
+.contact-section {
+  margin: 30px 0 70px;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include xs {
+    margin: 30px 0 50px;
+  }
+}
+.contact-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: $textColor;
+  line-height: 1.6666667;
+  margin: 0 0 17px;
+  @include xs {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+.contact-information {
+  margin: 0 0 60px;
+  @include xs {
+    margin: 0 0 40px;
+  }
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+  a {
+    font-size: 16px;
+    line-height: 1.313;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    @include focus($textColor);
+    i {
+      color: $secondaryColor;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      color: $primaryColor;
+      i {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.contact-socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 22px;
+}
+
+.contact-social {
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  @include focus($secondaryColor);
+  &:hover {
+    color: $primaryColor;
+  }
+}
+
+.contact-form {
+  margin: 0 0 60px;
+  @include xs {
+    margin: 0 0 40px;
+  }
+  .contact-title {
+    margin-bottom: 20px;
+  }
+}
