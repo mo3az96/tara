@@ -1,0 +1,13 @@
+.auth-header {
+  flex-shrink: 0;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 0;
+    @include sm {
+      padding: 10px 0;
+    }
+  }
+}

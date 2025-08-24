@@ -120,6 +120,12 @@
 }
 .intl-tel-input {
   width: 100%;
+  &.iti-container {
+    width: 100%;
+    .iti-mobile & {
+      width: auto;
+    }
+  }
   .flag-container {
     .selected-flag {
       display: flex;
@@ -192,6 +198,30 @@
     }
   }
   .form-control {
-    padding-right: 20px !important;
+    padding-right: 25px !important;
+  }
+}
+.password-content {
+  position: relative;
+  width: 100%;
+  .password-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    inset-inline-end: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #c2c2c2;
+    transition: all 0.3s ease-in-out;
+    &.active {
+      color: $primaryColor;
+      i {
+        &::before {
+          content: "\f070";
+        }
+      }
+    }
   }
 }

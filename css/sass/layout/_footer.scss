@@ -79,7 +79,7 @@
     flex-wrap: wrap;
     gap: 10px 22px;
   }
-  
+
   .social {
     font-size: 14px;
     display: inline-flex;
@@ -100,27 +100,27 @@
       justify-content: center;
       gap: 20px;
     }
-    .copyrights {
-      color: #c2c2c2;
-      font-size: 11px;
-      margin: 0;
-    }
-    .tasawk {
+  }
+  .copyrights {
+    color: #c2c2c2;
+    font-size: 11px;
+    margin: 0;
+  }
+  .tasawk {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    a {
       display: flex;
       align-items: center;
-      gap: 6px;
-      a {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        font-weight: 600;
-        @include focus(#fff);
-        img {
-          width: 12px;
-        }
-        &:hover {
-          color: $secondaryColor;
-        }
+      gap: 5px;
+      font-weight: 600;
+      @include focus(#fff);
+      img {
+        width: 12px;
+      }
+      &:hover {
+        color: $secondaryColor;
       }
     }
   }

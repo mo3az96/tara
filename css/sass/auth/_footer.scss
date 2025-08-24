@@ -1,0 +1,33 @@
+.auth-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  line-height: 1.6364;
+  flex-shrink: 0;
+  .copyrights {
+    color: #787878;
+    font-size: 11px;
+    margin: 0;
+  }
+  .tasawk {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      @include focus(#787878);
+      img {
+        width: 12px;
+      }
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}

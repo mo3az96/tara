@@ -22,51 +22,55 @@ $(document).ready(function () {
   }
 
   /***** main slider *****/
-  var mainSwiper = new Swiper(".main-slider .swiper", {
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-      delay: 10000,
-    },
-    pagination: {
-      el: ".main-slider .swiper-pagination",
-      clickable: true,
-    },
-  });
+  if (typeof Swiper !== "undefined") {
+    var mainSwiper = new Swiper(".main-slider .swiper", {
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 10000,
+      },
+      pagination: {
+        el: ".main-slider .swiper-pagination",
+        clickable: true,
+      },
+    });
+  }
 
   /***** testimonials slider *****/
-  var testimonialsSwiper = new Swiper(".testimonials-slider .swiper", {
-    loop: true,
-    breakpoints: {
-      0: {
-        slidesPerView: 1,
-        spaceBetween: 30,
+  if (typeof Swiper !== "undefined") {
+    var testimonialsSwiper = new Swiper(".testimonials-slider .swiper", {
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 30,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        992: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1200: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 15,
+      pagination: {
+        el: ".testimonials-slider .swiper-pagination",
+        clickable: true,
       },
-      992: {
-        slidesPerView: 2,
-        spaceBetween: 15,
-      },
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-    },
-    pagination: {
-      el: ".testimonials-slider .swiper-pagination",
-      clickable: true,
-    },
-  });
+    });
+  }
 
   /***** Form *****/
   let input = $("input[type=tel][intlTelInput]");
   if (input.length > 0) {
     for (let i = 0; i < input.length; i++) {
       intlTelInput(input[i], {
-        utilsScript: "js/utils.js",
+        utilsScript: "/js/utils.js",
         autoPlaceholder: "aggressive",
         separateDialCode: true,
         initialCountry: "sa",
@@ -74,4 +78,13 @@ $(document).ready(function () {
       });
     }
   }
+  $(".password-toggle").on("click", function (e) {
+    e.preventDefault();
+    const input = $(this)
+      .closest(".password-content")
+      .find("input.form-control");
+    const isPassword = input.attr("type") === "password";
+    input.attr("type", isPassword ? "text" : "password");
+    $(this).toggleClass("active", isPassword);
+  });
 });

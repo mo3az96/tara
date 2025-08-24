@@ -29,62 +29,6 @@ body {
     }
   }
 
-  .logo {
-    width: 100%;
-    max-width: 53px;
-    aspect-ratio: 53/54;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-    @include sm {
-      margin-inline-end: auto;
-    }
-    @include xs {
-      max-width: 45px;
-    }
-  }
-
-  .header-tools {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
-    @include xs {
-      gap: 15px;
-    }
-  }
-
-  .header-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-    padding: 0 22px;
-    width: fit-content;
-    height: 40px;
-    border-radius: 20px;
-    background-color: $primaryColor;
-    font-size: 14px;
-    font-weight: 700;
-    @include focus(#fff);
-    i {
-      font-size: 16px;
-    }
-    &:hover {
-      background-color: $secondaryColor;
-      color: #fff;
-    }
-    &.account-btn {
-      background-color: rgba($primaryColor, 0.1);
-      @include focus($primaryColor);
-      &:hover {
-        background-color: $secondaryColor;
-        color: #fff;
-      }
-    }
-  }
-
   .menu-btn {
     display: none;
     align-items: center;
@@ -115,6 +59,75 @@ body {
       @include xs {
         max-width: 40px;
       }
+    }
+  }
+}
+
+.logo {
+  width: 100%;
+  max-width: 53px;
+  aspect-ratio: 53/54;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  @include sm {
+    margin-inline-end: auto;
+  }
+  @include xs {
+    max-width: 45px;
+  }
+}
+
+.header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  @include xs {
+    gap: 15px;
+  }
+}
+
+.header-btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: $textColor;
+}
+
+.header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 0 22px;
+  width: fit-content;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $primaryColor;
+  font-size: 14px;
+  font-weight: 700;
+  @include focus(#fff);
+  i {
+    font-size: 16px;
+  }
+  &:hover {
+    background-color: $secondaryColor;
+    color: #fff;
+  }
+  &.account-btn {
+    background-color: rgba($primaryColor, 0.1);
+    @include focus($primaryColor);
+    &:hover {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+  }
+  &.auto-btn {
+    background-color: $secondaryColor;
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
     }
   }
 }
