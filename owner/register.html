@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
+    />
+    <title>TARA Bay Owner | Register</title>
+    <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="../css/select2.min.css" />
+    <link rel="stylesheet" href="../css/stepper.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body class="auth-body">
+    <!-- Start Header -->
+    <header class="auth-header">
+      <div class="container-fluid">
+        <div class="header">
+          <a href="index.html" class="logo" aria-label="logo">
+            <img
+              loading="lazy"
+              src="../images/logo.svg"
+              alt="logo"
+              class="img-contain"
+            />
+          </a>
+          <div class="header-tools">
+            <span class="header-hint"> مسجل بالفعل؟</span>
+            <a
+              href="login.html"
+              class="header-btn auth-btn"
+              aria-label="register"
+            >
+              <i class="fal fa-user"></i>
+              دخول
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Page Content -->
+    <main class="auth-section">
+      <div class="container">
+        <div class="auth-head">
+          <h1 class="auth-title">تسجيل جديد</h1>
+        </div>
+        <div id="registerForm" class="bs-stepper">
+          <div class="steps-header" role="tablist">
+            <div class="step" data-target="#step-1">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-1"
+              >
+                <span class="number"> 1 </span>
+                <span class="text"> البيانات الأساسية </span>
+              </button>
+            </div>
+            <div class="step" data-target="#step-2">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-2"
+              >
+                <span class="number"> 2 </span>
+                <span class="text"> التحقق </span>
+              </button>
+            </div>
+            <div class="step" data-target="#step-3">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-3"
+              >
+                <span class="number"> 3 </span>
+                <span class="text"> بيانات النشاط التجاري </span>
+              </button>
+            </div>
+            <div class="step" data-target="#step-4">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-4"
+              >
+                <span class="number"> 4 </span>
+                <span class="text"> باقة الإشتراك </span>
+              </button>
+            </div>
+            <div class="step" data-target="#step-5">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-5"
+              >
+                <span class="number"> 5 </span>
+                <span class="text"> الملخص والدفع </span>
+              </button>
+            </div>
+            <div class="step" data-target="#step-6">
+              <button
+                type="button"
+                class="step-trigger"
+                role="tab"
+                aria-controls="step-6"
+              >
+                <span class="number"> 6 </span>
+                <span class="text"> نجاح التسجيل </span>
+              </button>
+            </div>
+          </div>
+          <div class="bs-stepper-content">
+            <form action="index.html">
+              <div id="step-1" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="auth-form">
+                  <div class="form-group required">
+                    <label class="form-label">الاسم بالكامل</label>
+                    <input
+                      type="text"
+                      name="full_name"
+                      aria-label="full name"
+                      class="form-control"
+                      required
+                    />
+                    <!-- <span class="form-error"> يرجى ادخال الاسم </span> -->
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">رقم الجوال</label>
+                    <input
+                      type="tel"
+                      name="phone"
+                      aria-label="phone"
+                      class="form-control"
+                      required
+                      intlTelInput
+                    />
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <input
+                      type="email"
+                      name="email"
+                      aria-label="email"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">كلمة المرور</label>
+                    <div class="password-content">
+                      <input
+                        type="password"
+                        name="password"
+                        aria-label="password"
+                        class="form-control"
+                        required
+                      />
+                      <span class="password-toggle">
+                        <i class="fal fa-eye"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">تأكيد كلمة المرور</label>
+                    <div class="password-content">
+                      <input
+                        type="password"
+                        name="confirm_password"
+                        aria-label="confirm password"
+                        class="form-control"
+                        required
+                      />
+                      <span class="password-toggle">
+                        <i class="fal fa-eye"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <div class="checkbox">
+                      <label>
+                        <input
+                          type="checkbox"
+                          aria-label="terms"
+                          name="terms"
+                          required
+                        />
+                        <span class="mark">
+                          <i class="fa-regular fa-check"></i>
+                        </span>
+                        <span class="text">
+                          لقد قرأت وأوافق على
+                          <a href="../terms.html">الشروط والأحكام</a>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="submit-btn"
+                    aria-label="submit"
+                    onclick="registerForm.next()"
+                  >
+                    متابعة
+                  </button>
+                </div>
+              </div>
+              <div id="step-2" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="auth-form">
+                  <div class="otp-content">
+                    <h4 class="otp-title">
+                      قم بإدخال كود التحقق المرسل إلى رقم جوالك
+                    </h4>
+                    <div id="otp-input" class="otp-input">
+                      <input
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="9"
+                        autocomplete="no"
+                        pattern="\d*"
+                      />
+                      <input
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="9"
+                        autocomplete="no"
+                        pattern="\d*"
+                        disabled
+                      />
+                      <input
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="9"
+                        autocomplete="no"
+                        pattern="\d*"
+                        disabled
+                      />
+                      <input
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="9"
+                        autocomplete="no"
+                        pattern="\d*"
+                        disabled
+                      />
+                      <input
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="9"
+                        autocomplete="no"
+                        pattern="\d*"
+                        disabled
+                      />
+                    </div>
+                    <input type="hidden" name="otp" />
+                    <button
+                      type="button"
+                      class="submit-btn"
+                      aria-label="submit"
+                      onclick="registerForm.next()"
+                      disabled
+                    >
+                      تحقق
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="step-3" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="auth-form">
+                  <div class="form-group required">
+                    <label class="form-label"> نوع النشاط </label>
+                    <select
+                      class="form-control"
+                      name="activity_type"
+                      aria-label="activity type"
+                      required
+                      select2
+                    >
+                      <option hidden selected>اختر من القائمة</option>
+                      <option value="1">مطاعم</option>
+                      <option value="2">مقهي</option>
+                      <option value="3">لاونج</option>
+                      <option value="4">سيارات آيس كريم متجولة</option>
+                      <option value="5">سيارات متجولة لبيع الأطعمة</option>
+                      <option value="6">محل عصيرات طازجة</option>
+                      <option value="other">اخرى</option>
+                      <option value="8">نشاط 8</option>
+                      <option value="9">نشاط 9</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">اسم النشاط</label>
+                    <input
+                      type="text"
+                      name="activity_name"
+                      aria-label="activity name"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">صورة/ شعار النشاط</label>
+                    <label class="file-content">
+                      <input
+                        type="file"
+                        name="activity_image"
+                        aria-label="activity image"
+                        required
+                        accept="image/*"
+                      />
+                      <div class="form-control">
+                        <div class="file-content">
+                          <span class="file-name"> </span>
+                          <span class="file-type"> </span>
+                        </div>
+                        <span class="file-btn">
+                          <i class="far fa-arrow-up-from-bracket"></i>
+                          رفع ملف
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"
+                      >صورة السجل التجاري/ وثيقة العمل الحر</label
+                    >
+                    <label class="file-content">
+                      <input
+                        type="file"
+                        name="commercial_record_image"
+                        aria-label="commercial record image"
+                        accept="image/*"
+                      />
+                      <div class="form-control">
+                        <div class="file-content">
+                          <span class="file-name"> </span>
+                          <span class="file-type"> </span>
+                        </div>
+                        <span class="file-btn">
+                          <i class="far fa-arrow-up-from-bracket"></i>
+                          رفع ملف
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label"> هوية المفوض </label>
+                    <div class="radios">
+                      <div class="radio">
+                        <label>
+                          <input
+                            type="radio"
+                            name="commissioner_identity"
+                            aria-label="Commissioner's identity"
+                            required
+                            checked="checked"
+                          />
+                          <span class="mark"> </span>
+                          <span class="text"> المالك </span>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input
+                            type="radio"
+                            name="commissioner_identity"
+                            aria-label="Commissioner's identity"
+                            required
+                          />
+                          <span class="mark"> </span>
+                          <span class="text"> مفوض من المالك </span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">صورة الهوية أو الأقامة</label>
+                    <label class="file-content">
+                      <input
+                        type="file"
+                        name="id_image"
+                        aria-label="id image"
+                        required
+                        accept="image/*"
+                      />
+                      <div class="form-control">
+                        <div class="file-content">
+                          <span class="file-name"> </span>
+                          <span class="file-type"> </span>
+                        </div>
+                        <span class="file-btn">
+                          <i class="far fa-arrow-up-from-bracket"></i>
+                          رفع ملف
+                        </span>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"> المنطقة </label>
+                    <select
+                      class="form-control"
+                      name="area"
+                      aria-label="area"
+                      select2
+                    >
+                      <option hidden selected>اختر من القائمة</option>
+                      <option value="1">منطقة 1</option>
+                      <option value="2">منطقة 2</option>
+                      <option value="3">منطقة 3</option>
+                      <option value="4">منطقة 4</option>
+                      <option value="5">منطقة 5</option>
+                      <option value="6">منطقة 6</option>
+                      <option value="7">منطقة 7</option>
+                      <option value="8">منطقة 8</option>
+                      <option value="9">منطقة 9</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"> المدينة </label>
+                    <select
+                      class="form-control"
+                      name="city"
+                      aria-label="city"
+                      select2
+                    >
+                      <option hidden selected>اختر من القائمة</option>
+                      <option value="1">مدينة 1</option>
+                      <option value="2">مدينة 2</option>
+                      <option value="3">مدينة 3</option>
+                      <option value="4">مدينة 4</option>
+                      <option value="5">مدينة 5</option>
+                      <option value="6">مدينة 6</option>
+                      <option value="7">مدينة 7</option>
+                      <option value="8">مدينة 8</option>
+                      <option value="9">مدينة 9</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label"
+                      >اسم المستفيد (الحساب البنكي)</label
+                    >
+                    <input
+                      type="text"
+                      name="bank_acc_owner"
+                      aria-label="bank account owner"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"> اسم البنك </label>
+                    <select
+                      class="form-control"
+                      name="bank"
+                      aria-label="bank"
+                      select2
+                    >
+                      <option hidden selected>اختر من القائمة</option>
+                      <option value="1">بنك 1</option>
+                      <option value="2">بنك 2</option>
+                      <option value="3">بنك 3</option>
+                      <option value="4">بنك 4</option>
+                      <option value="5">بنك 5</option>
+                      <option value="6">بنك 6</option>
+                      <option value="7">بنك 7</option>
+                      <option value="8">بنك 8</option>
+                      <option value="9">بنك 9</option>
+                    </select>
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">رقم الحساب البنكي</label>
+                    <input
+                      type="text"
+                      name="bank_acc_number"
+                      aria-label="bank account number"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="form-group required">
+                    <label class="form-label">رقم الايبان</label>
+                    <input
+                      type="text"
+                      name="bank_acc_iban"
+                      aria-label="bank account iban"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <button
+                    type="button"
+                    class="submit-btn"
+                    aria-label="submit"
+                    onclick="registerForm.next()"
+                  >
+                    متابعة
+                  </button>
+                </div>
+              </div>
+              <div id="step-4" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="packages-content">
+                  <label class="package-radio">
+                    <input
+                      type="radio"
+                      name="package"
+                      aria-label="package"
+                      required
+                      onchange="registerForm.next()"
+                    />
+                    <div class="package-item">
+                      <span class="icon">
+                        <i class="fal fa-bolt"></i>
+                      </span>
+                      <h4 class="title">باقة البداية</h4>
+                      <div class="prices">
+                        <strong class="current">
+                          149
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </strong>
+                        <span class="old">
+                          199
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </span>
+                      </div>
+                      <ul class="features">
+                        <li>عدد الفروع: 1 فرع</li>
+                        <li>مناسبة للمشاريع الناشئة</li>
+                        <li>تشمل إنشاء QR للطاولات</li>
+                        <li>إدارة مرنة للطلبات، وقائمة طعام</li>
+                      </ul>
+                    </div>
+                  </label>
+                  <label class="package-radio">
+                    <input
+                      type="radio"
+                      name="package"
+                      aria-label="package"
+                      required
+                      onchange="registerForm.next()"
+                    />
+                    <div class="package-item">
+                      <span class="icon">
+                        <i class="fal fa-rocket-launch"></i>
+                      </span>
+                      <h4 class="title">باقة النمو</h4>
+                      <div class="prices">
+                        <strong class="current">
+                          349
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </strong>
+                        <span class="old">
+                          449
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </span>
+                      </div>
+                      <ul class="features">
+                        <li>عدد الفروع: حتى 3 فروع</li>
+                        <li>تحكم في الفروع من لوحة تحكم واحدة</li>
+                        <li>تقارير مالية</li>
+                        <li>إدارة موظفين</li>
+                      </ul>
+                    </div>
+                  </label>
+                  <label class="package-radio">
+                    <input
+                      type="radio"
+                      name="package"
+                      aria-label="package"
+                      required
+                      onchange="registerForm.next()"
+                    />
+                    <div class="package-item">
+                      <span class="icon">
+                        <i class="fal fa-building"></i>
+                      </span>
+                      <h4 class="title">باقة الأعمال</h4>
+                      <div class="prices">
+                        <strong class="current">
+                          599
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </strong>
+                        <span class="old">
+                          749
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />/ شهريًا
+                        </span>
+                      </div>
+                      <ul class="features">
+                        <li>عدد الفروع: حتى 5 فروع</li>
+                        <li>مثالية لسلاسل المطاعم والكافيهات</li>
+                        <li>مزايا موسّعة في التقارير والتحليلات</li>
+                        <li>مزايا موسّعة في التقارير والتحليلات</li>
+                      </ul>
+                    </div>
+                  </label>
+                </div>
+              </div>
+              <div id="step-5" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="checkout_step-content">
+                  <div class="checkout_step-start">
+                    <h4 class="checkout_step-title">تفاصيل الإشتراك</h4>
+                    <div class="checkout_step-details">
+                      <p class="details-item">
+                        <span class="title">اسم الباقة</span>
+                        <span class="value">باقة الأعمال</span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">مدة الباقة</span>
+                        <span class="value">شهر</span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">سعر الباقة</span>
+                        <span class="value">
+                          599
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">تاريخ بداية الإشتراك</span>
+                        <span class="value">2025-06-11</span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">تاريخ نهاية الإشتراك</span>
+                        <span class="value">2025-07-10</span>
+                      </p>
+                    </div>
+                    <div class="checkout_step-payment">
+                      <h4 class="checkout_step-title">طريقة الدفع</h4>
+                      <div class="payment-list">
+                        <label class="payment-item">
+                          <input
+                            type="radio"
+                            name="payment"
+                            aria-label="payment"
+                            required
+                          />
+                          <span class="mark"></span>
+                          <span class="text"> فيزا/ ماستركارد </span>
+                          <div class="logos">
+                            <span>
+                              <img
+                                loading="lazy"
+                                src="../images/payments/1.png"
+                                alt="mastercard"
+                                class="img-contain"
+                              />
+                            </span>
+                            <span>
+                              <img
+                                loading="lazy"
+                                src="../images/payments/2.png"
+                                alt="visa"
+                                class="img-contain"
+                              />
+                            </span>
+                          </div>
+                        </label>
+                        <label class="payment-item">
+                          <input
+                            type="radio"
+                            name="payment"
+                            aria-label="payment"
+                            required
+                          />
+                          <span class="mark"></span>
+                          <span class="text"> ابل باي </span>
+                          <div class="logos">
+                            <span>
+                              <img
+                                loading="lazy"
+                                src="../images/payments/3.png"
+                                alt="apple pay"
+                                class="img-contain"
+                              />
+                            </span>
+                          </div>
+                        </label>
+                        <label class="payment-item">
+                          <input
+                            type="radio"
+                            name="payment"
+                            aria-label="payment"
+                            required
+                          />
+                          <span class="mark"></span>
+                          <span class="text"> مدى </span>
+                          <div class="logos">
+                            <span>
+                              <img
+                                loading="lazy"
+                                src="../images/payments/4.png"
+                                alt="mada"
+                                class="img-contain"
+                              />
+                            </span>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="checkout_step-end">
+                    <h4 class="checkout_step-title">ملخص الطلب</h4>
+                    <div class="checkout_step-totals">
+                      <p class="details-item">
+                        <span class="title">قيمة الباقة</span>
+                        <span class="value">
+                          599
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">ضريبة القيمة المضافة 15%</span>
+                        <span class="value">
+                          89.85
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </p>
+                      <p class="details-item">
+                        <span class="title">الإجمالي شامل الضريبة</span>
+                        <span class="value">
+                          688.85
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </p>
+                    </div>
+                    <div class="form-group required">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            aria-label="terms"
+                            name="terms"
+                            required
+                          />
+                          <span class="mark">
+                            <i class="fa-regular fa-check"></i>
+                          </span>
+                          <span class="text">
+                            لقد قرأت وأوافق على
+                            <a href="../terms.html">الشروط والأحكام</a>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="submit-btn"
+                      aria-label="submit"
+                      onclick="registerForm.next()"
+                    >
+                      تأكيد الإشتراك والدفع
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="step-6" role="tabpanel" class="bs-stepper-pane fade">
+                <div class="success-content">
+                  <span class="icon">
+                    <i class="fat fa-check-circle"></i>
+                  </span>
+                  <h4 class="title">تم الإشتراك بنجاح</h4>
+                  <p class="desc">
+                    رقم اشتراكك هو #12345، سيتم تحويلك تلقائيًا إلى الشاشة
+                    الرئيسية خلال 5 ثوانِ
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Page Content -->
+
+    <!-- Start Footer -->
+    <footer class="auth-footer">
+      <p class="copyrights">تارا باي 2025 ©</p>
+      <p class="copyrights tasawk">
+        تطوير
+        <a
+          href="https://tasawk.com.sa"
+          target="_blank"
+          aria-label="tasawk link"
+        >
+          <img loading="lazy" src="../images/icons/tasawk.svg" alt="tasawk" />
+          تسوق لتقنية المعلومات
+        </a>
+      </p>
+    </footer>
+    <!-- End Footer -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/intlTelInput.min.js"></script>
+    <script src="../js/select2.min.js"></script>
+    <script src="../js/stepper.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/svg.js"></script>
+
+    <script>
+      $("select[name=activity_type]").on("change", function () {
+        const ele = `<div class="form-group required" id="other_activity_name">
+                  <label class="form-label">ادخل نوع النشاط</label>
+                  <input
+                    type="text"
+                    name="other_activity_name"
+                    aria-label="other activity name"
+                    class="form-control"
+                    required
+                  />
+                </div>`;
+        if ($(this).val() == "other") {
+          $(".form-group:has(select[name=activity_type])").after(ele);
+        } else {
+          $("#other_activity_name").remove();
+        }
+      });
+
+      $(".submit-btn").on("click", function () {
+        if ($("#step-6").hasClass("active")) {
+          setTimeout(() => {
+            window.location.href = "../index.html";
+          }, 5000);
+        }
+      });
+    </script>
+  </body>
+</html>

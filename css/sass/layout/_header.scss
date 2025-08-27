@@ -89,7 +89,7 @@ body {
   }
 }
 
-.header-btn {
+.header-hint {
   font-size: 14px;
   font-weight: 600;
   color: $textColor;
@@ -123,7 +123,7 @@ body {
       color: #fff;
     }
   }
-  &.auto-btn {
+  &.auth-btn {
     background-color: $secondaryColor;
     &:hover {
       background-color: $primaryColor;

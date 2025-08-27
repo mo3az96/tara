@@ -71,14 +71,16 @@
     display: flex;
     align-items: center;
     gap: 5px;
-    img {
+    svg {
       width: 30px;
+      // height: 30px;
       margin-inline-start: 2px;
+      fill: currentColor;
     }
   }
   .old {
     width: fit-content;
-    padding: 3px;
+    padding: 0 3px;
     font-size: 16px;
     line-height: 1.5625;
     font-weight: 600;
@@ -87,11 +89,11 @@
     align-items: center;
     gap: 3px;
     position: relative;
-    img {
+    svg {
       width: 16px;
+      // height: 16px;
       margin-inline-start: 2px;
-      filter: invert(95%) sepia(0%) saturate(0%) hue-rotate(185deg)
-        brightness(85%) contrast(84%);
+      fill: currentColor;
     }
     &:after {
       content: "";
