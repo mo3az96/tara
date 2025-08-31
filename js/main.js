@@ -11,11 +11,13 @@ $(document).ready(function () {
   if ($(window).width() <= 991) {
     $(".menu-btn").click(function () {
       $(".header-nav").addClass("active");
+      $(".dashboard-sidebar").addClass("active");
       $("body").addClass("overflow");
       $(".overlay").fadeIn();
     });
     $(".close-btn,.overlay").click(function () {
       $(".header-nav").removeClass("active");
+      $(".dashboard-sidebar").removeClass("active");
       $("body").removeClass("overflow");
       $(".overlay").fadeOut();
     });
@@ -64,6 +66,13 @@ $(document).ready(function () {
       },
     });
   }
+
+  /***** Sidebar *****/
+  $(".has-children .sidebar_menu-link").on("click", function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $(this).siblings(".sidebar_children").slideToggle();
+  });
 
   /***** Form *****/
   let input = $("input[type=tel][intlTelInput]");

@@ -1,0 +1,117 @@
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 29px;
+  @include cus-lg {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include sm {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xs {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  @include xxs {
+    grid-template-columns: 1fr;
+  }
+}
+.dashboard-card {
+  padding: 20px 23px 23px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include xs {
+    padding: 20px 15px;
+  }
+  @include xxs {
+    padding: 20px;
+  }
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    color: $textColor;
+    font-weight: 600;
+    line-height: 1.5714;
+    gap: 10px;
+    margin: 0 0 7px;
+    i {
+      font-size: 18px;
+      color: #c5c5c5;
+    }
+  }
+  .card-value {
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    line-height: 1.63334;
+    color: $textColor;
+    margin: 0 0 6px;
+    @include xs {
+      font-size: 24px;
+    }
+    @include xxs {
+      font-size: 30px;
+    }
+  }
+  .card-status {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.58334;
+    color: $textColor;
+    i {
+      width: 24px;
+      height: 17px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      background-color: rgba($textColor, 0.1);
+      @include xs {
+        width: 17px;
+        font-size: 10px;
+      }
+      @include xxs {
+        width: 24px;
+        font-size: 12px;
+      }
+    }
+    &.up {
+      color: #00c851;
+      i {
+        background-color: rgba(#00c851, 0.1);
+      }
+    }
+    &.down {
+      color: #dc2829;
+      i {
+        background-color: rgba(#dc2829, 0.1);
+      }
+    }
+  }
+  &.top-branch {
+    border-color: #f4d605;
+    .card-title {
+      i {
+        color: #f4d605;
+      }
+    }
+    .card-status {
+      color: #f4d605;
+      i {
+        background-color: rgba(#f4d605, 0.1);
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.dashboard_header-account {
+  padding-inline-end: 30px;
+  border-inline-end: 1px solid #f2f2f2;
+  position: relative;
+  @include cus-lg {
+    padding-inline-end: 20px;
+  }
+  @include sm {
+    order: 3;
+    padding: 0;
+    border: none;
+  }
+  @include xs {
+    order: 1;
+  }
+  .account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    @include sm {
+      gap: 5px;
+    }
+    .img {
+      width: 50px;
+      aspect-ratio: 1;
+      border: 1px solid #dee1e6;
+      border-radius: 25px;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: all 0.3s ease-in-out;
+      @include sm {
+        width: 35px;
+      }
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      margin: 0;
+    }
+    .name {
+      font-size: 14px;
+      font-weight: 700;
+      color: $textColor;
+      line-height: 1.57143;
+      transition: all 0.3s ease-in-out;
+      @include xs {
+        font-size: 12px;
+      }
+    }
+    .id {
+      font-size: 10px;
+      font-weight: 600;
+      color: #b8b8b8;
+      line-height: 1.6;
+      transition: all 0.3s ease-in-out;
+      @include xs {
+        font-size: 8px;
+      }
+    }
+    &:after {
+      font-family: "Font Awesome 6 Pro";
+      font-weight: 400;
+      font-size: 12px;
+      color: #b8b8b8;
+      content: "\f078";
+      @include xs{
+        font-size: 10px;
+      }
+    }
+  }
+
+  .account-list {
+    position: absolute;
+    inset-inline-start: -20px;
+    top: calc(100% + 10px);
+    box-shadow: 0px 3px 10px #0000001a;
+    background-color: #fff;
+    border-radius: 10px;
+    min-width: 120px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      inset-inline-start: 40px;
+      bottom: 100%;
+      width: 0;
+      height: 0;
+      border-right: 5px solid transparent;
+      border-left: 5px solid transparent;
+      border-bottom: 5px solid #fff;
+      border-top: 0;
+    }
+    li {
+      width: 100%;
+    }
+    .account-link {
+      font-size: 16px;
+      font-weight: 400;
+      white-space: nowrap;
+      height: 37px;
+      display: flex;
+      align-items: center;
+      padding: 0 19px;
+      align-items: center;
+      @include focus($textColor);
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+
+  &:hover {
+    .account-info {
+      color: $primaryColor;
+      .name {
+        color: $primaryColor;
+      }
+    }
+    .account-list {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
