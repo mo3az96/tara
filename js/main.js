@@ -8,7 +8,7 @@ $(document).ready(function () {
       : $("header.main-header").removeClass("fixed ");
   });
   /***** Menu *****/
-  if ($(window).width() <= 991) {
+  if ($(window).width() <= 1199) {
     $(".menu-btn").click(function () {
       $(".header-nav").addClass("active");
       $(".dashboard-sidebar").addClass("active");
@@ -22,6 +22,7 @@ $(document).ready(function () {
       $(".overlay").fadeOut();
     });
   }
+
 
   /***** main slider *****/
   if (typeof Swiper !== "undefined") {

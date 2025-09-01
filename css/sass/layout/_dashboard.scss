@@ -192,7 +192,8 @@
 .dashboard_main-content {
   display: flex;
   flex-direction: column;
-  height: auto;
+  // height: auto;
+  height: 100%;
   > :last-child {
     margin-bottom: 0;
   }
@@ -345,7 +346,7 @@
 }
 
 .dashboard-main {
-  height: 100%;
+  // height: 100%;
   margin-bottom: 40px;
 }
 

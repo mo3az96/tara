@@ -2528,7 +2528,7 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
 .dashboard_main-content {
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 100%;
 }
 .dashboard_main-content > :last-child {
   margin-bottom: 0;
@@ -2710,7 +2710,6 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
 }
 
 .dashboard-main {
-  height: 100%;
   margin-bottom: 40px;
 }
 
@@ -4068,4 +4067,102 @@ html[dir=ltr] .side-nav .nav-body a::before {
 }
 .dashboard-card.top-branch .card-status i {
   background-color: rgba(244, 214, 5, 0.1);
+}
+
+.notifications-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.notifications-head .dashboard_page-title {
+  margin: 0;
+}
+.notifications-head .notifications-btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 20px;
+  height: 36px;
+  border: 1px solid #f2f2f2;
+  background-color: #fff;
+  border-radius: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: #000000;
+  transition: all 0.3s ease-in-out;
+}
+.notifications-head .notifications-btn:focus {
+  color: #000000;
+}
+.notifications-head .notifications-btn:hover {
+  background-color: #DC2829;
+  border-color: #DC2829;
+  text-decoration: none;
+  color: #fff;
+}
+.notifications-head .notifications-hint {
+  width: 100%;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #DC2829;
+  line-height: 19px;
+}
+
+.notifications-day {
+  margin: 20px 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #c5c5c5;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.notifications-list :last-child {
+  margin-bottom: 0;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.notification-item .img {
+  width: 50px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.notification-item .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.notification-item .title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 1.571;
+  margin: 0;
+}
+.notification-item .time {
+  color: #c5c5c5;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 19px;
+}
+.notification-item.readed {
+  background-color: #f3f2f2;
 }/*# sourceMappingURL=main.css.map */
