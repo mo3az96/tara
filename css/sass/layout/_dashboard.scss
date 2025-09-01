@@ -152,9 +152,10 @@
   }
 
   .active {
-    a {
+    > a {
       color: $primaryColor;
-      i {
+      i,
+      &::after {
         color: $primaryColor;
       }
     }

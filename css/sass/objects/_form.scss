@@ -3,18 +3,31 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0 28px;
+  &.two {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 30px;
+  }
   .full-w {
     grid-column: 1/-1;
   }
   @include md {
     gap: 0 12px;
+    &.two {
+      gap: 0 15px;
+    }
   }
   @include sm {
     grid-template-columns: 1fr 1fr;
     gap: 0 25px;
+    &.two {
+      gap: 0 25px;
+    }
   }
   @include xs {
     grid-template-columns: 1fr;
+    &.two {
+      grid-template-columns: 1fr;
+    }
   }
 }
 .form-group {
