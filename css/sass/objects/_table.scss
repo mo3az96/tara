@@ -1,0 +1,166 @@
+.dashboard_table-responsive {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  width: 100%;
+  @include sm {
+    padding-bottom: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+.dashboard_table-content {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.dashboard-table {
+  width: 100%;
+  @include sm {
+    min-width: 850px;
+  }
+  tr {
+    &:last-of-type {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+  th,
+  td {
+    padding: 0 15px;
+    height: 50px;
+    font-size: 14px;
+
+    &:first-of-type {
+      padding-inline-start: 20px;
+    }
+    &:last-of-type {
+      padding-inline-end: 20px;
+    }
+    @include sm {
+      height: auto;
+      padding: 15px 10px;
+      font-size: 12px;
+      &:has(.table-switch) {
+        padding-block: 5px;
+      }
+      &:first-of-type {
+        padding-inline-start: 15px;
+      }
+      &:last-of-type {
+        padding-inline-end: 15px;
+      }
+    }
+  }
+
+  th {
+    white-space: nowrap;
+    background-color: $secondaryColor;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  td {
+    background-color: #fff;
+    font-weight: 400;
+    color: $textColor;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .table-contact {
+    @include focus(inherit);
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  .table-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-size: 20px;
+    margin: 0 auto;
+    @include focus(#a8a8a8);
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  .table-switch {
+    cursor: pointer;
+    display: flex;
+    .slider {
+      cursor: pointer;
+      width: 73px;
+      height: 28px;
+      border-radius: 14px;
+      background-color: #a8a8a8;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 3px;
+        inset-inline-start: 3px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+      }
+      @include sm {
+        width: 65px;
+      }
+    }
+    .text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      font-weight: 700;
+      display: block;
+      text-align: center;
+      width: 32px;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      &.on {
+        inset-inline-start: 10px;
+        visibility: hidden;
+        opacity: 0;
+      }
+      &.off {
+        inset-inline-end: 10px;
+      }
+
+      @include sm {
+        font-size: 10px;
+        width: 27px;
+      }
+    }
+    input {
+      display: none;
+      &:checked {
+        + .slider {
+          background-color: #00c851;
+          &::after {
+            inset-inline-start: calc(100% - 25px);
+          }
+          .text {
+            &.on {
+              visibility: visible;
+              opacity: 1;
+            }
+            &.off {
+              visibility: hidden;
+              opacity: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

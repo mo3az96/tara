@@ -1541,6 +1541,184 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   margin: 0 0 30px;
 }
 
+.dashboard_table-responsive {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .dashboard_table-responsive {
+    padding-bottom: 8px;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.dashboard_table-content {
+  width: 100%;
+  border-bottom: 1px solid #ececec;
+}
+
+.dashboard-table {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .dashboard-table {
+    min-width: 850px;
+  }
+}
+.dashboard-table tr:last-of-type td {
+  border-bottom: none;
+}
+.dashboard-table th,
+.dashboard-table td {
+  padding: 0 15px;
+  height: 50px;
+  font-size: 14px;
+}
+.dashboard-table th:first-of-type,
+.dashboard-table td:first-of-type {
+  padding-inline-start: 20px;
+}
+.dashboard-table th:last-of-type,
+.dashboard-table td:last-of-type {
+  padding-inline-end: 20px;
+}
+@media (max-width: 991px) {
+  .dashboard-table th,
+  .dashboard-table td {
+    height: auto;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .dashboard-table th:has(.table-switch),
+  .dashboard-table td:has(.table-switch) {
+    padding-block: 5px;
+  }
+  .dashboard-table th:first-of-type,
+  .dashboard-table td:first-of-type {
+    padding-inline-start: 15px;
+  }
+  .dashboard-table th:last-of-type,
+  .dashboard-table td:last-of-type {
+    padding-inline-end: 15px;
+  }
+}
+.dashboard-table th {
+  white-space: nowrap;
+  background-color: #F75D1B;
+  font-weight: 700;
+  color: #fff;
+}
+.dashboard-table td {
+  background-color: #fff;
+  font-weight: 400;
+  color: #000000;
+  border-bottom: 1px solid #ececec;
+}
+.dashboard-table .table-contact {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-table .table-contact:focus {
+  color: inherit;
+}
+.dashboard-table .table-contact:hover {
+  color: #DC2829;
+}
+.dashboard-table .table-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  margin: 0 auto;
+  color: #a8a8a8;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-table .table-link:focus {
+  color: #a8a8a8;
+}
+.dashboard-table .table-link:hover {
+  color: #DC2829;
+}
+.dashboard-table .table-switch {
+  cursor: pointer;
+  display: flex;
+}
+.dashboard-table .table-switch .slider {
+  cursor: pointer;
+  width: 73px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #a8a8a8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-table .table-switch .slider::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  inset-inline-start: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+@media (max-width: 991px) {
+  .dashboard-table .table-switch .slider {
+    width: 65px;
+  }
+}
+.dashboard-table .table-switch .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  width: 32px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard-table .table-switch .text.on {
+  inset-inline-start: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+.dashboard-table .table-switch .text.off {
+  inset-inline-end: 10px;
+}
+@media (max-width: 991px) {
+  .dashboard-table .table-switch .text {
+    font-size: 10px;
+    width: 27px;
+  }
+}
+.dashboard-table .table-switch input {
+  display: none;
+}
+.dashboard-table .table-switch input:checked + .slider {
+  background-color: #00c851;
+}
+.dashboard-table .table-switch input:checked + .slider::after {
+  inset-inline-start: calc(100% - 25px);
+}
+.dashboard-table .table-switch input:checked + .slider .text.on {
+  visibility: visible;
+  opacity: 1;
+}
+.dashboard-table .table-switch input:checked + .slider .text.off {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .main-section {
   width: 100%;
   overflow: hidden;
@@ -2365,7 +2543,7 @@ body:has(.main-header) {
 }
 @media (max-width: 1199px) {
   .dashboard-content {
-    grid-template-columns: 1fr;
+    display: block;
     padding: 20px 0;
     height: auto;
   }
