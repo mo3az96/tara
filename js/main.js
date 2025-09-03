@@ -23,7 +23,6 @@ $(document).ready(function () {
     });
   }
 
-
   /***** main slider *****/
   if (typeof Swiper !== "undefined") {
     var mainSwiper = new Swiper(".main-slider .swiper", {
@@ -98,7 +97,7 @@ $(document).ready(function () {
     $(this).toggleClass("active", isPassword);
   });
 
-  if (typeof select2 !== "undefined") {
+  if (typeof $.fn.select2 !== "undefined") {
     if ($(window).width() >= 992) {
       $("select[select2]").select2({
         minimumResultsForSearch: Infinity,

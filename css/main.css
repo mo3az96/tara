@@ -1639,7 +1639,6 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
-  margin: 0 auto;
   color: #a8a8a8;
   transition: all 0.3s ease-in-out;
 }
@@ -4424,6 +4423,7 @@ html[dir=ltr] .side-nav .nav-body a::before {
   border: 1px solid #f2f2f2;
   border-radius: 10px;
   background-color: #fff;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .dashboard-form {
