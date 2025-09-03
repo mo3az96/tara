@@ -1572,9 +1572,13 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
 }
 .dashboard-table th,
 .dashboard-table td {
-  padding: 0 15px;
-  height: 50px;
+  padding: 14px 15px;
+  min-height: 50px;
   font-size: 14px;
+}
+.dashboard-table th:has(.table-switch),
+.dashboard-table td:has(.table-switch) {
+  padding-block: 10px;
 }
 .dashboard-table th:first-of-type,
 .dashboard-table td:first-of-type {
@@ -1587,7 +1591,7 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
 @media (max-width: 991px) {
   .dashboard-table th,
   .dashboard-table td {
-    height: auto;
+    min-height: auto;
     padding: 15px 10px;
     font-size: 12px;
   }
@@ -1614,6 +1618,8 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   background-color: #fff;
   font-weight: 400;
   color: #000000;
+  vertical-align: top;
+  max-width: 160px;
   border-bottom: 1px solid #ececec;
 }
 .dashboard-table .table-contact {
@@ -1717,6 +1723,47 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
 .dashboard-table .table-switch input:checked + .slider .text.off {
   visibility: hidden;
   opacity: 0;
+}
+.dashboard-table .table-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.dashboard-table .table-price svg {
+  fill: currentColor;
+  width: 14px;
+}
+@media (max-width: 991px) {
+  .dashboard-table .table-price svg {
+    width: 12px;
+  }
+}
+.dashboard-table .table-status {
+  position: relative;
+  transform: perspective(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-radius: 12px;
+  padding: 0 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--color);
+  font-weight: 600;
+  overflow: hidden;
+}
+.dashboard-table .table-status::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color);
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .main-section {
@@ -2913,6 +2960,17 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
   color: #000000;
   line-height: 1.65;
   margin: 0 0 25px;
+}
+
+.head-with-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.head-with-btn .dashboard_page-title {
+  margin-bottom: 0;
 }
 
 .dashboard-footer {
