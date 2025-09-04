@@ -25,6 +25,9 @@
     background-color: $secondaryColor;
     color: #fff;
   }
+  &.form-btn {
+    min-width: 84px;
+  }
 }
 
 .secondary-btn {
@@ -52,7 +55,7 @@
   justify-content: center;
   width: fit-content;
   padding: 0 22px;
-  min-width: 135px;
+  min-width: 120px;
   height: 50px;
   border-radius: 25px;
   background-color: #f3f2f2;

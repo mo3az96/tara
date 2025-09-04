@@ -368,6 +368,24 @@
     margin-bottom: 0;
   }
 }
+
+.dashboard_head-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  width: fit-content;
+  height: 48px;
+  border-radius: 30px;
+  background-color: $secondaryColor;
+  font-size: 14px;
+  font-weight: 700;
+  @include focus(#fff);
+  &:hover {
+    background-color: $primaryColor;
+    color: #fff;
+  }
+}
 .dashboard-footer {
   display: flex;
   align-items: center;

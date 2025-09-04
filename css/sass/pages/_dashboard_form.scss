@@ -8,3 +8,34 @@
     padding: 20px;
   }
 }
+.dashboard-search {
+  .search-content {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    padding: 30px 30px 37px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+    margin-bottom: 30px;
+    @include xs {
+      padding: 30px 20px;
+      flex-direction: column;
+    }
+  }
+  .search-input {
+    width: 100%;
+  }
+  .buttons-content {
+    flex-shrink: 0;
+    @include xs {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .form-btn {
+        min-width: unset;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
       name="description"
       content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
     />
-    <title>TARA Bay Owner | Tables</title>
+    <title>TARA Bay Owner | Menu</title>
     <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
@@ -99,7 +99,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children active">
+              <li class="sidebar_menu-item has-children">
                 <a
                   href="#!"
                   class="sidebar_menu-link"
@@ -118,7 +118,7 @@
                       إضافة طاولة جديدة
                     </a>
                   </li>
-                  <li class="children_menu-item active">
+                  <li class="children_menu-item" active>
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
@@ -129,7 +129,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children">
+              <li class="sidebar_menu-item has-children active">
                 <a
                   href="#!"
                   class="sidebar_menu-link"
@@ -138,7 +138,7 @@
                   <i class="fal fa-plate-utensils"></i>
                   قائمة الطعام
                 </a>
-                <ul class="sidebar_children">
+                <ul class="sidebar_children" style="display: block">
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
@@ -148,7 +148,7 @@
                       إضافة تصنيف جديد
                     </a>
                   </li>
-                  <li class="children_menu-item">
+                  <li class="children_menu-item active">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
@@ -476,78 +476,73 @@
                   </a>
                 </li>
                 <li>
-                  <a href="tables_list.html" aria-label="breadcrumb link">
-                    قائمة الطاولات
+                  <a href="categories_list.html" aria-label="breadcrumb link">
+                    قائمة التصنيفات
                   </a>
                 </li>
               </ul>
             </div>
             <main class="dashboard-main">
-              <h1 class="dashboard_page-title">قائمة الطاولات</h1>
+              <h1 class="dashboard_page-title">قائمة التصنيفات</h1>
+              <form class="dashboard-search">
+                <div class="search-content">
+                  <div class="search-input">
+                    <label class="form-label"> البحث </label>
+                    <input
+                      type="search"
+                      name="search"
+                      aria-label="search"
+                      class="form-control"
+                      placeholder="ابحث باسم التصنيف"
+                    />
+                  </div>
+                  <div class="buttons-content">
+                    <button type="submit" class="form-btn default-btn">
+                      بحث
+                    </button>
+                    <button type="reset" class="form-btn dashboard-btn">
+                      إعادة ضبط
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <h2 class="dashboard_page-title">نتائج البحث</h2>
               <div class="dashboard_table-responsive">
                 <div class="dashboard_table-content">
                   <table class="dashboard-table">
                     <tr>
                       <th>#</th>
                       <th>تاريخ ووقت الإضافة</th>
-                      <th>اسم الفرع</th>
-                      <th>رقم الطاولة</th>
-                      <th>طلبات الطاولة</th>
+                      <th>اسم التصنيف</th>
+                      <th>عدد الأصناف</th>
+                      <th>عرض الأصناف</th>
                       <th>تعديل</th>
-                      <th>الحالة</th>
+                      <th>حذف</th>
                     </tr>
                     <tr>
                       <td>1</td>
                       <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>1</td>
                       <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
+                        <p class="table-desc">
+                          اللحوم المدخنة <br />
+                          Smoked Meats
+                        </p>
+                      </td>
+                      <td>5</td>
+                      <td>
+                        <a href="categories_products.html" class="table-link">
+                          <i class="fal fa-eye"></i>
                         </a>
                       </td>
                       <td>
-                        <a href="tables_add.html" class="table-link">
+                        <a href="categories_add.html" class="table-link">
                           <i class="fal fa-pen-to-square"></i>
                         </a>
                       </td>
                       <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>1</td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
+                        <a href="#!" class="table-link">
+                          <i class="fal fa-trash-alt"></i>
                         </a>
-                      </td>
-                      <td>
-                        <a href="tables_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
-                        </div>
                       </td>
                     </tr>
                   </table>

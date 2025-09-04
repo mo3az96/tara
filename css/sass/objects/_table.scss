@@ -69,6 +69,12 @@
     vertical-align: top;
     max-width: 160px;
     border-bottom: 1px solid #ececec;
+    @media (min-width: 992px) {
+      &:has(.table-desc) {
+        max-width: unset;
+        width: 270px;
+      }
+    }
   }
 
   .table-contact {
@@ -206,5 +212,9 @@
       opacity: 0.2;
       z-index: -1;
     }
+  }
+
+  .table-desc {
+    margin: 0;
   }
 }

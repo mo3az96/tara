@@ -418,6 +418,9 @@ html[dir=ltr] select {
   background-color: #F75D1B;
   color: #fff;
 }
+.default-btn.form-btn {
+  min-width: 84px;
+}
 
 .secondary-btn {
   display: flex;
@@ -450,7 +453,7 @@ html[dir=ltr] select {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0 22px;
-  min-width: 135px;
+  min-width: 120px;
   height: 50px;
   border-radius: 25px;
   background-color: #f3f2f2;
@@ -1622,6 +1625,12 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   max-width: 160px;
   border-bottom: 1px solid #ececec;
 }
+@media (min-width: 992px) {
+  .dashboard-table td:has(.table-desc) {
+    max-width: unset;
+    width: 270px;
+  }
+}
 .dashboard-table .table-contact {
   color: inherit;
   transition: all 0.3s ease-in-out;
@@ -1763,6 +1772,9 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   background-color: var(--color);
   opacity: 0.2;
   z-index: -1;
+}
+.dashboard-table .table-desc {
+  margin: 0;
 }
 
 .main-section {
@@ -2970,6 +2982,29 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
 }
 .head-with-btn .dashboard_page-title {
   margin-bottom: 0;
+}
+
+.dashboard_head-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 48px;
+  border-radius: 30px;
+  background-color: #F75D1B;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.dashboard_head-btn:focus {
+  color: #fff;
+}
+.dashboard_head-btn:hover {
+  background-color: #DC2829;
+  color: #fff;
 }
 
 .dashboard-footer {
@@ -4428,5 +4463,39 @@ html[dir=ltr] .side-nav .nav-body a::before {
 @media (max-width: 767px) {
   .dashboard-form {
     padding: 20px;
+  }
+}
+
+.dashboard-search .search-content {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 30px 30px 37px;
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .dashboard-search .search-content {
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+}
+.dashboard-search .search-input {
+  width: 100%;
+}
+.dashboard-search .buttons-content {
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .dashboard-search .buttons-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dashboard-search .buttons-content .form-btn {
+    min-width: unset;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
