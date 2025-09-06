@@ -119,6 +119,13 @@ $(document).ready(function () {
       .html("." + file_val[1]);
   });
 
+  $(".date-content input[type=date]").change(function () {
+    if ($(this).val() != "") {
+      $(this).addClass("filled");
+    } else {
+      $(this).removeClass("filled");
+    }
+  });
   /***** Form Stepper *****/
   if ($("#registerForm").length > 0) {
     window.registerForm = new Stepper(document.querySelector("#registerForm"), {

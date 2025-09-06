@@ -7,25 +7,35 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 0 30px;
   }
+  &.three {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 14px;
+  }
   .full-w {
     grid-column: 1/-1;
   }
   @include md {
     gap: 0 12px;
-    &.two {
+    &.two,
+    &.three {
       gap: 0 15px;
+    }
+    &.three {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   @include sm {
     grid-template-columns: 1fr 1fr;
     gap: 0 25px;
-    &.two {
+    &.two,
+    &.three {
       gap: 0 25px;
     }
   }
   @include xs {
     grid-template-columns: 1fr;
-    &.two {
+    &.two,
+    &.three {
       grid-template-columns: 1fr;
     }
   }
@@ -718,6 +728,64 @@
     .file-btn {
       background-color: $secondaryColor;
       color: #fff;
+    }
+  }
+}
+
+/* date */
+.date-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  .input-content {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    .form-control {
+      @include rtl {
+        direction: rtl;
+        text-align: right;
+      }
+      &::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+      &::-webkit-datetime-edit-fields-wrapper {
+        opacity: 0;
+        color: $textColor;
+        font-size: 14px;
+      }
+    }
+    &:after {
+      content: attr(data-placeholder);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      color: $textColor;
+      opacity: 0.5;
+      pointer-events: none;
+      padding: 0 29px;
+      font-size: 14px;
+    }
+    &:has(.filled) {
+      &:after {
+        display: none;
+      }
+      .form-control {
+        &::-webkit-datetime-edit-fields-wrapper {
+          opacity: 1;
+        }
+      }
     }
   }
 }

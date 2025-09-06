@@ -1,5 +1,8 @@
 .dashboard-body {
   background-color: #f8f8f8;
+  &:has([select2]) {
+    overflow-x: hidden;
+  }
 }
 
 .dashboard-content {
