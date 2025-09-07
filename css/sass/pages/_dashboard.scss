@@ -211,3 +211,60 @@
 .orders-table {
   margin-bottom: 30px;
 }
+
+.exclamation-hint {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  padding: 15px 20px;
+  background-color: rgba(#e9ca00, 0.071);
+  border: 1px solid #e9ca00;
+  border-radius: 5px;
+  font-size: 14px;
+  color: $textColor;
+  margin-bottom: 30px;
+  i {
+    color: #e9ca00;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include xs {
+      font-size: 18px;
+    }
+  }
+  @include xs {
+    padding: 10px 15px;
+  }
+}
+.dashboard_checkout {
+  padding: 30px 30px 43px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include xs {
+    padding: 20px 15px;
+  }
+  @include xxs {
+    padding: 20px;
+  }
+}
+
+.dashboard_packages {
+  padding: 34px 30px;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  :last-child {
+    margin-bottom: 0;
+  }
+  @include xs {
+    padding: 20px 15px;
+  }
+  @include xxs {
+    padding: 20px;
+  }
+}

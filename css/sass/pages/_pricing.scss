@@ -125,5 +125,16 @@
   .default-btn {
     margin-top: auto;
     width: 100%;
+    cursor: pointer;
+  }
+
+  .hint {
+    width: 100%;
+    text-align: center;
+    color: #c2c2c2;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.6154;
+    margin-top: 15px;
   }
 }

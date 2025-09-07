@@ -73,11 +73,17 @@
     vertical-align: top;
     max-width: 160px;
     border-bottom: 1px solid #ececec;
+
     @media (min-width: 992px) {
       &:has(.table-desc) {
         max-width: unset;
         width: 270px;
       }
+    }
+  }
+  tr:has(.table-btns) {
+    td {
+      vertical-align: middle;
     }
   }
 
@@ -270,6 +276,36 @@
     color: $textColor;
     .value {
       font-weight: 700;
+    }
+  }
+
+  .table-btns {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 5px;
+  }
+  .table-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 32px;
+    border-radius: 16px;
+    border: 1px solid $primaryColor;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: $primaryColor;
+    cursor: pointer;
+    @include focus(#fff);
+    &.renew {
+      background-color: transparent;
+      @include focus($primaryColor);
+    }
+    &:hover {
+      background-color: $secondaryColor;
+      border-color: $secondaryColor;
+      color: #fff;
     }
   }
 }
