@@ -1224,6 +1224,7 @@ html[dir=ltr] .select2-container .select2-selection--multiple .select2-selection
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  width: 100%;
 }
 .date-content .input-content {
   position: relative;
