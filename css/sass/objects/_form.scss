@@ -57,6 +57,10 @@
   &:has(.form-control:disabled) {
     opacity: 0.5;
   }
+  &:has([disabled]) {
+    opacity: 0.5;
+    pointer-events: none;
+  }
   @include xs {
     margin-bottom: 25px;
   }
@@ -433,7 +437,8 @@
   }
 }
 /* select */
-.select2-container {
+.select2-container,
+.select2-container.select2-container--disabled {
   .select2-selection--single {
     padding: 0 16px;
     border-color: #dee1e6 !important;
