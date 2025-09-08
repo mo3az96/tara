@@ -10,7 +10,7 @@
       name="description"
       content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
     />
-    <title>TARA Bay Owner | Subscriptions</title>
+    <title>TARA Bay Owner | Account</title>
     <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
@@ -179,7 +179,7 @@
                   قائمة العملاء
                 </a>
               </li>
-              <li class="sidebar_menu-item active">
+              <li class="sidebar_menu-item">
                 <a
                   href="subscriptions_list.html"
                   class="sidebar_menu-link"
@@ -229,7 +229,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children">
+              <li class="sidebar_menu-item has-children active">
                 <a
                   href="#!"
                   class="sidebar_menu-link"
@@ -238,7 +238,7 @@
                   <i class="fal fa-user"></i>
                   الملف الشخصي
                 </a>
-                <ul class="sidebar_children">
+                <ul class="sidebar_children" style="display: block">
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
@@ -257,7 +257,7 @@
                       بيانات النشاط التجاري
                     </a>
                   </li>
-                  <li class="children_menu-item">
+                  <li class="children_menu-item active">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
@@ -476,158 +476,67 @@
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="subscriptions_list.html"
-                    aria-label="breadcrumb link"
-                  >
-                    سجل الإشتراكات
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="subscriptions_packages.html"
-                    aria-label="breadcrumb link"
-                  >
-                    تغيير الباقة
+                  <a href="account_payments.html" aria-label="breadcrumb link">
+                    طرق استقبال المدفوعات
                   </a>
                 </li>
               </ul>
             </div>
             <main class="dashboard-main">
-              <h1 class="dashboard_page-title">تغيير الباقة</h1>
-              <div class="dashboard_packages">
-                <div class="packages-content">
-                  <div class="package-item">
-                    <span class="icon">
-                      <i class="fal fa-bolt"></i>
-                    </span>
-                    <h4 class="title">باقة البداية</h4>
-                    <div class="prices">
-                      <strong class="current">
-                        149
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </strong>
-                      <span class="old">
-                        199
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </span>
-                    </div>
-                    <ul class="features">
-                      <li>عدد الفروع: 1 فرع</li>
-                      <li>مناسبة للمشاريع الناشئة</li>
-                      <li>تشمل إنشاء QR للطاولات</li>
-                      <li>إدارة مرنة للطلبات، وقائمة طعام</li>
-                    </ul>
-                    <a
-                      href="subscriptions_change.html"
-                      class="default-btn"
-                      aria-label="buy button"
-                    >
-                      تغيير إلى هذه الباقة
-                    </a>
-                    <span class="hint">
-                      عند التغيير سيتم إيقاف الباقة الحالية وتفعيل هذه الباقة
-                      مباشرة
-                    </span>
-                  </div>
-                  <div class="package-item">
-                    <span class="icon">
-                      <i class="fal fa-rocket-launch"></i>
-                    </span>
-                    <h4 class="title">باقة النمو</h4>
-                    <div class="prices">
-                      <strong class="current">
-                        349
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </strong>
-                      <span class="old">
-                        449
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </span>
-                    </div>
-                    <ul class="features">
-                      <li>عدد الفروع: حتى 3 فروع</li>
-                      <li>تحكم في الفروع من لوحة تحكم واحدة</li>
-                      <li>تقارير مالية</li>
-                      <li>إدارة موظفين</li>
-                    </ul>
-                    <a
-                      data-bs-toggle="modal"
-                      data-bs-target="#renewModal"
-                      class="default-btn"
-                      aria-label="buy button"
-                    >
-                      تجديد الباقة
-                    </a>
-                    <span class="hint">
-                      ستنتهي في 01 يوليو 2025 – يمكنك التجديد الآن للحفاظ على
-                      استمرارية الخدمة
-                    </span>
-                  </div>
-                  <div class="package-item">
-                    <span class="icon">
-                      <i class="fal fa-building"></i>
-                    </span>
-                    <h4 class="title">باقة الأعمال</h4>
-                    <div class="prices">
-                      <strong class="current">
-                        599
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </strong>
-                      <span class="old">
-                        749
-                        <img
-                          loading="lazy"
-                          src="../images/icons/sar.svg"
-                          alt="sar"
-                          class="svg"
-                        />/ شهريًا
-                      </span>
-                    </div>
-                    <ul class="features">
-                      <li>عدد الفروع: حتى 5 فروع</li>
-                      <li>مثالية لسلاسل المطاعم والكافيهات</li>
-                      <li>مزايا موسّعة في التقارير والتحليلات</li>
-                      <li>مزايا موسّعة في التقارير والتحليلات</li>
-                    </ul>
-                    <a
-                      href="subscriptions_change.html"
-                      class="default-btn"
-                      aria-label="buy button"
-                    >
-                      تغيير إلى هذه الباقة
-                    </a>
-                    <span class="hint">
-                      عند التغيير سيتم إيقاف الباقة الحالية وتفعيل هذه الباقة
-                      مباشرة
-                    </span>
-                  </div>
-                </div>
+              <h1 class="dashboard_page-title">طرق استقبال المدفوعات</h1>
+              <div class="dashboard_table-responsive no-scroll">
+                <table class="dashboard-table">
+                  <tr>
+                    <th>#</th>
+                    <th style="width: 80%">طريقة الدفع</th>
+                    <th>الحالة</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>كاش</td>
+                    <td>
+                      <div class="table-switch">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider">
+                            <span class="text on">فعال</span>
+                            <span class="text off">معطل</span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>جهاز تحصيل</td>
+                    <td>
+                      <div class="table-switch">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider">
+                            <span class="text on">فعال</span>
+                            <span class="text off">معطل</span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>الدفع الإلكتروني</td>
+                    <td>
+                      <div class="table-switch">
+                        <label class="switch">
+                          <input type="checkbox" checked />
+                          <span class="slider">
+                            <span class="text on">فعال</span>
+                            <span class="text off">معطل</span>
+                          </span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </main>
             <footer class="dashboard-footer">
@@ -669,9 +578,7 @@
               <i class="fat fa-right-from-bracket"></i>
             </span>
             <h2 class="modal-head">تسجيل خروج</h2>
-            <p class="modal-description">
-              هل أنت متأكد أنك تريد تسجيل الخروج؟
-            </p>
+            <p class="modal-description">هل أنت متأكد أنك تريد تسجيل الخروج؟</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="modal-btn default-btn">تأكيد</button>
@@ -687,50 +594,10 @@
       </div>
     </div>
     <!-- End Logout Modal -->
-
-    <!-- Start Renew Modal -->
-    <div class="modal fade" id="renewModal" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
-      >
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="modal-close" data-bs-dismiss="modal">
-              <i class="far fa-xmark"></i>
-            </button>
-          </div>
-          <div class="modal-body">
-            <span class="modal-icon exclamation-icon">
-              <i class="fat fa-exclamation-circle"></i>
-            </span>
-            <h2 class="modal-head">تجديد الباقة</h2>
-            <p class="modal-description">
-              يرجى العلم أن التجديد سيتم على نفس الباقة الحالية، وقد تختلف بعض
-              التفاصيل عند التجديد. إذا تم التجديد قبل انتهاء الباقة، سيتم إنهاء
-              الاشتراك الحالي وتفعيل الجديد مباشرة
-            </p>
-          </div>
-          <div class="modal-footer">
-            <a href="subscriptions_renew.html" class="modal-btn default-btn">
-              تأكيد التجديد
-            </a>
-            <button
-              type="button"
-              class="modal-btn dashboard-btn"
-              data-bs-dismiss="modal"
-            >
-              إلغاء العملية
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Renew Modal -->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/intlTelInput.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/svg.js"></script>
   </body>
 </html>

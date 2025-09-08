@@ -57,3 +57,14 @@
     }
   }
 }
+
+.password_modal-link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  @include focus($primaryColor);
+  &:hover {
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+}

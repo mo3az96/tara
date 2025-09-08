@@ -4,11 +4,13 @@
   width: 100%;
 
   @include sm {
-    padding-bottom: 8px;
-    max-width: 100%;
-    overflow-x: auto;
-    .dashboard-table {
-      min-width: 850px;
+    &:not(.no-scroll) {
+      padding-bottom: 8px;
+      max-width: 100%;
+      overflow-x: auto;
+      .dashboard-table {
+        min-width: 850px;
+      }
     }
   }
 }

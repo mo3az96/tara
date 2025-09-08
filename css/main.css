@@ -643,13 +643,9 @@ button {
   font-size: 14px;
   font-weight: 400;
   color: #000000;
-  direction: rtl;
   resize: none;
   text-transform: none;
   transition: all 0.3s ease-in-out;
-}
-html[dir=ltr] .form-control {
-  direction: ltr;
 }
 .form-control:is(textarea) {
   height: 90px;
@@ -671,27 +667,39 @@ html[dir=ltr] .form-control {
   font-weight: 400;
   color: #c2c2c2;
 }
+html[dir=rtl] .form-control::-moz-placeholder {
+  text-align: right;
+}
+html[dir=rtl] .form-control::placeholder, html[dir=rtl] .form-control:has([hidden]:checked) {
+  text-align: right;
+}
+html[dir=ltr] .form-control::-moz-placeholder {
+  text-align: left;
+}
+html[dir=ltr] .form-control::placeholder, html[dir=ltr] .form-control:has([hidden]:checked) {
+  text-align: left;
+}
 .form-control:focus {
   box-shadow: none;
   outline: none;
   border-color: #DC2829;
 }
-.form-control:focus:is(select) {
+.form-control:focus:is(select), .form-control:focus:is([readonly]) {
   border-color: #dee1e6;
 }
 .form-control:disabled {
   background-color: #fff;
 }
 
-.form-group:has([type=tel]) {
+.form-group:has([type=tel][intlTelInput]) {
   direction: ltr;
 }
-html[dir=rtl] .form-group:has([type=tel]) .form-control {
+html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-control {
   direction: ltr;
   text-align: right;
 }
-html[dir=rtl] .form-group:has([type=tel]) .form-label,
-html[dir=rtl] .form-group:has([type=tel]) .form-error {
+html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-label,
+html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-error {
   width: 100%;
   text-align: right;
 }
@@ -1292,6 +1300,67 @@ html[dir=rtl] .date-content .input-content .form-control {
   fill: currentColor;
 }
 
+.telephone-preview {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.telephone-preview .form-control {
+  padding-left: 180px;
+}
+html[dir=rtl] .telephone-preview .form-control {
+  padding-left: 180px;
+}
+.telephone-preview .telephone-tools {
+  position: absolute;
+  inset-inline-end: 6px;
+  top: 6px;
+  bottom: 6px;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 10px;
+}
+.telephone-preview .country-code {
+  direction: ltr;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 7px;
+}
+.telephone-preview .country-code img {
+  width: 24px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.telephone-preview .edit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  width: 94px;
+  height: 36px;
+  background-color: rgba(220, 40, 41, 0.1);
+  box-shadow: 0px 4px 15px rgba(55, 165, 155, 0.1019607843);
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #DC2829;
+  transition: all 0.3s ease-in-out;
+}
+.telephone-preview .edit-btn:focus {
+  color: #DC2829;
+}
+.telephone-preview .edit-btn:hover {
+  background-color: #F75D1B;
+  color: #fff;
+}
+
 .steps-header {
   display: flex;
   align-items: center;
@@ -1534,6 +1603,9 @@ html[dir=rtl] .date-content .input-content .form-control {
   scrollbar-width: unset;
   scrollbar-color: unset;
 }
+.modal .modal-content:has([type=tel][intlTelInput]) {
+  overflow: unset;
+}
 .modal .modal-content::-webkit-scrollbar {
   background-color: #f0f0f0;
   width: 0;
@@ -1542,6 +1614,9 @@ html[dir=rtl] .date-content .input-content .form-control {
 .modal .modal-content::-webkit-scrollbar-thumb {
   background-color: #d0d0d0;
   border-radius: 2px;
+}
+.modal .modal-content > :last-child {
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .modal .modal-content {
@@ -1577,15 +1652,18 @@ html[dir=rtl] .date-content .input-content .form-control {
   color: #DC2829;
 }
 .modal .modal-body {
-  padding: 0 0 15px;
-  margin-bottom: 15px;
+  padding: 0;
+  margin-bottom: 0;
+}
+.modal .modal-body:has([type=tel][intlTelInput]) {
+  overflow: unset;
 }
 .modal .modal-body :last-child {
   margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .modal .modal-body {
-    padding: 0 0 5px;
+    padding: 0 0;
   }
 }
 .modal .modal-footer {
@@ -1593,8 +1671,14 @@ html[dir=rtl] .date-content .input-content .form-control {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  padding: 0;
+  padding: 15px 0 0;
+  margin: 15px 0 0;
   border: none;
+}
+@media (max-width: 767px) {
+  .modal .modal-footer {
+    padding: 5px 0 0;
+  }
 }
 .modal .modal-btn {
   width: calc(50% - 10px);
@@ -1602,7 +1686,7 @@ html[dir=rtl] .date-content .input-content .form-control {
   margin: 0;
 }
 
-.alert-icon {
+.modal-icon {
   font-size: 72px;
   line-height: 1.19445;
   display: flex;
@@ -1611,17 +1695,17 @@ html[dir=rtl] .date-content .input-content .form-control {
   color: #F75D1B;
   margin-bottom: 30px;
 }
-.alert-icon.exclamation-icon {
+.modal-icon.exclamation-icon {
   color: #e9ca00;
 }
-.alert-icon.logout-icon {
+.modal-icon.logout-icon {
   color: #F75D1B;
 }
-.alert-icon.success-icon {
+.modal-icon.success-icon {
   color: #00c851;
 }
 
-.logout-title {
+.modal-head {
   font-size: 20px;
   font-weight: 800;
   color: #000000;
@@ -1630,7 +1714,7 @@ html[dir=rtl] .date-content .input-content .form-control {
   margin: 0 0 20px;
 }
 
-.logout-description {
+.modal-description {
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -1645,12 +1729,12 @@ html[dir=rtl] .date-content .input-content .form-control {
   width: 100%;
 }
 @media (max-width: 991px) {
-  .dashboard_table-responsive {
+  .dashboard_table-responsive:not(.no-scroll) {
     padding-bottom: 8px;
     max-width: 100%;
     overflow-x: auto;
   }
-  .dashboard_table-responsive .dashboard-table {
+  .dashboard_table-responsive:not(.no-scroll) .dashboard-table {
     min-width: 850px;
   }
 }
@@ -4946,4 +5030,19 @@ html[dir=ltr] .side-nav .nav-body a::before {
 }
 .dashboard-search .filter-content .buttons-content {
   margin-inline-start: auto;
+}
+
+.password_modal-link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #DC2829;
+  transition: all 0.3s ease-in-out;
+}
+.password_modal-link:focus {
+  color: #DC2829;
+}
+.password_modal-link:hover {
+  color: #F75D1B;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
