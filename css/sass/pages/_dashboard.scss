@@ -308,3 +308,129 @@
     margin: 0;
   }
 }
+
+.dashboard-info {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 30px 60px;
+  &:has(.side-nav) {
+    overflow: unset;
+  }
+  @include xs {
+    padding: 20px 20px 30px;
+  }
+  &:has(.cover-section) {
+    padding-top: 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+  .cover-section,
+  .about_page-features {
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    @include xs {
+      width: calc(100% + 40px);
+      margin: 0 -20px;
+    }
+  }
+  .section-head {
+    margin-bottom: 35px;
+    .section-icon {
+      margin-bottom: 0;
+    }
+    @include xs {
+      margin-bottom: 24px;
+    }
+  }
+  .about_page-main {
+    margin: 60px 0;
+    .section-head {
+      width: 100%;
+      max-width: 900px;
+      margin-inline: auto;
+      margin-bottom: 60px;
+    }
+    @include xs {
+      margin: 40px 0;
+      .section-head {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .about_page-features {
+    padding: 74px 30px 100px;
+    @include xs {
+      padding: 50px 20px;
+    }
+  }
+  .testimonials-section {
+    margin: 60px 0;
+    @include xs {
+      margin: 40px 0;
+    }
+  }
+
+  .section-title {
+    font-size: 30px;
+    @include xs {
+      font-size: 22px;
+    }
+  }
+  .section-desc {
+    font-size: 18px;
+    @include xs {
+      font-size: 16px;
+    }
+  }
+  .about_feature-item {
+    padding: 40px;
+    .icon {
+      font-size: 40px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    .desc {
+      font-size: 18px;
+      height: 126px;
+    }
+    @include xs {
+      padding: 30px 20px;
+    }
+  }
+  .feature-item {
+    padding: 35px 24px 42px;
+    .icon {
+      font-size: 40px;
+    }
+    .title {
+      font-size: 20px;
+    }
+    @include xs {
+      padding: 30px 20px;
+    }
+  }
+  .testimonial-item {
+    .title {
+      font-size: 18px;
+    }
+    .desc {
+      font-size: 16px;
+      height: 112px;
+    }
+  }
+  .side-nav {
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    box-shadow: none;
+    top: 30px;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}

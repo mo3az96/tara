@@ -6,7 +6,7 @@
 }
 .information-content {
   display: grid;
-  grid-template-columns: 23637fr 10000fr;
+  grid-template-columns: 1fr 300px;
   gap: 30px;
   align-items: flex-start;
   @include sm {
