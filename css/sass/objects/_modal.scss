@@ -17,7 +17,20 @@
     border: none;
     padding: 50px;
     position: relative;
-    max-height: 600px;
+    max-height: min(600px, calc(100dvh - 30px));
+    overflow-y: auto;
+    scrollbar-width: unset;
+    scrollbar-color: unset;
+    &::-webkit-scrollbar {
+      background-color: #f0f0f0;
+      width: 0;
+      border-radius: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #d0d0d0;
+      border-radius: 2px;
+    }
     @include xs {
       padding: 25px 10px 20px;
     }
@@ -59,18 +72,6 @@
     @include xs {
       padding: 0 0 5px;
     }
-    scrollbar-width: unset;
-    scrollbar-color: unset;
-    &::-webkit-scrollbar {
-      background-color: #f0f0f0;
-      width: 4px;
-      border-radius: 0;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #d0d0d0;
-      border-radius: 2px;
-    }
   }
   .modal-footer {
     display: flex;
@@ -92,6 +93,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: $secondaryColor;
   margin-bottom: 30px;
   &.exclamation-icon {
     color: #e9ca00;

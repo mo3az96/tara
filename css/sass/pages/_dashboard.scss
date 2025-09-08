@@ -268,3 +268,43 @@
     padding: 20px;
   }
 }
+
+.money-cards {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  @include sm {
+    gap: 10px;
+  }
+  @include xs {
+    flex-direction: column;
+  }
+}
+
+.money_card-item {
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 23px 23px 17px;
+  .head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: $textColor;
+    margin: 0 0 8px;
+    i {
+      font-size: 18px;
+      color: #c5c5c5;
+    }
+  }
+  .value {
+    font-size: 30px;
+    font-weight: 700;
+    color: $textColor;
+    line-height: 1.633334;
+    margin: 0;
+  }
+}

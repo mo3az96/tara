@@ -790,3 +790,23 @@
     }
   }
 }
+
+.iconed-input {
+  position: relative;
+  width: 100%;
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    inset-inline-end: 30px;
+    fill: #343434;
+    opacity: 0.5;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+      fill: currentColor;
+    }
+  }
+}
