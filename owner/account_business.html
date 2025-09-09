@@ -485,7 +485,7 @@
             </div>
             <main class="dashboard-main">
               <h1 class="dashboard_page-title">بيانات النشاط التجاري</h1>
-              <div class="dashboard-form">
+              <div class="dashboard-form account_business-form">
                 <form>
                   <div class="form-grid two">
                     <div class="form-group required">
@@ -498,8 +498,8 @@
                         select2
                         disabled
                       >
-                        <option hidden selected>اختر من القائمة</option>
-                        <option value="1">مطاعم</option>
+                        <option hidden>اختر من القائمة</option>
+                        <option value="1" selected>مطاعم</option>
                         <option value="2">مقهي</option>
                         <option value="3">لاونج</option>
                         <option value="4">سيارات آيس كريم متجولة</option>
@@ -518,12 +518,13 @@
                         aria-label="activity name"
                         class="form-control"
                         required
+                        value="باربكيو تايم"
                         disabled
                       />
                     </div>
                     <div class="form-group required">
                       <label class="form-label">صورة/ شعار النشاط</label>
-                      <label class="file-content">
+                      <label class="file-content-preview">
                         <input
                           type="file"
                           name="activity_image"
@@ -532,15 +533,8 @@
                           accept="image/*"
                           disabled
                         />
-                        <div class="form-control">
-                          <div class="file-content">
-                            <span class="file-name"> </span>
-                            <span class="file-type"> </span>
-                          </div>
-                          <span class="file-btn">
-                            <i class="far fa-arrow-up-from-bracket"></i>
-                            رفع ملف
-                          </span>
+                        <div class="img-content">
+                          <img src="../images/users/1.jpg" class="img-cover" />
                         </div>
                       </label>
                     </div>
@@ -548,23 +542,17 @@
                       <label class="form-label"
                         >صورة السجل التجاري/ وثيقة العمل الحر</label
                       >
-                      <label class="file-content">
+                      <label class="file-content-preview">
                         <input
                           type="file"
                           name="commercial_record_image"
                           aria-label="commercial record image"
+                          required
                           accept="image/*"
                           disabled
                         />
-                        <div class="form-control">
-                          <div class="file-content">
-                            <span class="file-name"> </span>
-                            <span class="file-type"> </span>
-                          </div>
-                          <span class="file-btn">
-                            <i class="far fa-arrow-up-from-bracket"></i>
-                            رفع ملف
-                          </span>
+                        <div class="img-content">
+                          <img src="../images/users/4.jpg" class="img-cover" />
                         </div>
                       </label>
                     </div>
@@ -602,7 +590,7 @@
                     </div>
                     <div class="form-group required">
                       <label class="form-label">صورة الهوية أو الأقامة</label>
-                      <label class="file-content">
+                      <label class="file-content-preview">
                         <input
                           type="file"
                           name="id_image"
@@ -610,15 +598,8 @@
                           required
                           accept="image/*"
                         />
-                        <div class="form-control">
-                          <div class="file-content">
-                            <span class="file-name"> </span>
-                            <span class="file-type"> </span>
-                          </div>
-                          <span class="file-btn">
-                            <i class="far fa-arrow-up-from-bracket"></i>
-                            رفع ملف
-                          </span>
+                        <div class="img-content">
+                          <img src="../images/users/4.jpg" class="img-cover" />
                         </div>
                       </label>
                     </div>
@@ -631,10 +612,10 @@
                         select2
                         disabled
                       >
-                        <option hidden selected>اختر من القائمة</option>
+                        <option hidden>اختر من القائمة</option>
                         <option value="1">منطقة 1</option>
                         <option value="2">منطقة 2</option>
-                        <option value="3">منطقة 3</option>
+                        <option value="3" selected>منطقة 3</option>
                         <option value="4">منطقة 4</option>
                         <option value="5">منطقة 5</option>
                         <option value="6">منطقة 6</option>
@@ -652,12 +633,12 @@
                         select2
                         disabled
                       >
-                        <option hidden selected>اختر من القائمة</option>
+                        <option hidden>اختر من القائمة</option>
                         <option value="1">مدينة 1</option>
                         <option value="2">مدينة 2</option>
                         <option value="3">مدينة 3</option>
                         <option value="4">مدينة 4</option>
-                        <option value="5">مدينة 5</option>
+                        <option value="5" selected>مدينة 5</option>
                         <option value="6">مدينة 6</option>
                         <option value="7">مدينة 7</option>
                         <option value="8">مدينة 8</option>
@@ -674,6 +655,7 @@
                         aria-label="bank account owner"
                         class="form-control"
                         required
+                        value="شركة BBQ تايم التجارية"
                         disabled
                       />
                     </div>
@@ -686,11 +668,11 @@
                         select2
                         disabled
                       >
-                        <option hidden selected>اختر من القائمة</option>
+                        <option hidden>اختر من القائمة</option>
                         <option value="1">بنك 1</option>
                         <option value="2">بنك 2</option>
                         <option value="3">بنك 3</option>
-                        <option value="4">بنك 4</option>
+                        <option value="4" selected>بنك 4</option>
                         <option value="5">بنك 5</option>
                         <option value="6">بنك 6</option>
                         <option value="7">بنك 7</option>
@@ -706,6 +688,7 @@
                         aria-label="bank account number"
                         class="form-control"
                         required
+                        value="12567890123456"
                         disabled
                       />
                     </div>
@@ -717,6 +700,7 @@
                         aria-label="bank account iban"
                         class="form-control"
                         required
+                        value="SA8880000123456789012345"
                         disabled
                       />
                     </div>

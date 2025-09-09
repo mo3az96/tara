@@ -119,6 +119,13 @@ $(document).ready(function () {
       .html("." + file_val[1]);
   });
 
+  $(".file-content-preview input[type=file]").change(function () {
+    let file_val = $(this).prop("files")[0];
+    let file_path = (window.URL ? URL : webkitURL).createObjectURL(file_val);
+
+    $(this).parent(".file-content-preview").find(".img-content img").attr("src", file_path);
+  });
+
   $(".date-content input[type=date]").change(function () {
     if ($(this).val() != "") {
       $(this).addClass("filled");

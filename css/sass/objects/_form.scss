@@ -873,3 +873,22 @@
     }
   }
 }
+
+.file-content-preview {
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  .img-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 1px solid #dee1e6;
+    border-radius: 10px;
+  }
+  input {
+    display: none;
+  }
+}

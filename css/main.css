@@ -1403,6 +1403,26 @@ html[dir=rtl] .telephone-preview .form-control {
   color: #fff;
 }
 
+.file-content-preview {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+.file-content-preview .img-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 1px solid #dee1e6;
+  border-radius: 10px;
+}
+.file-content-preview input {
+  display: none;
+}
+
 .steps-header {
   display: flex;
   align-items: center;
@@ -5231,4 +5251,10 @@ html[dir=ltr] .side-nav .nav-body a::before {
 .password_modal-link:hover {
   color: #F75D1B;
   text-decoration: none;
+}
+
+.account_business-form .file-content-preview,
+.account_business-form .radios,
+.account_business-form .checkboxes {
+  margin: 0 20px;
 }/*# sourceMappingURL=main.css.map */
