@@ -2960,8 +2960,15 @@ body:has(.main-header) {
   overflow: hidden;
 }
 .dashboard-sidebar .dashboard_header-info {
-  gap: 25px;
+  gap: 20px;
   display: none;
+  align-items: start;
+}
+.dashboard-sidebar .dashboard_header-info .title {
+  white-space: nowrap;
+}
+.dashboard-sidebar .dashboard_header-info .value {
+  line-height: 1.4;
 }
 @media (max-width: 767px) {
   .dashboard-sidebar .dashboard_header-info {
@@ -2972,9 +2979,10 @@ body:has(.main-header) {
   .dashboard-sidebar {
     position: fixed;
     top: 0;
-    inset-inline-start: -360px;
+    inset-inline-start: -370px;
     height: 100dvh;
-    width: 360px;
+    width: calc(100% - 10px);
+    max-width: 370px;
     border: none;
     border-radius: 0;
     z-index: 99;

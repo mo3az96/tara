@@ -26,8 +26,15 @@
   border-radius: 10px;
   overflow: hidden;
   .dashboard_header-info {
-    gap: 25px;
+    gap: 20px;
     display: none;
+    align-items: start;
+    .title{
+      white-space: nowrap;
+    }
+    .value{
+      line-height: 1.4;
+    }
     @include xs {
       display: flex;
     }
@@ -35,9 +42,10 @@
   @include md {
     position: fixed;
     top: 0;
-    inset-inline-start: -360px;
+    inset-inline-start: -370px;
     height: 100dvh;
-    width: 360px;
+    width: calc(100% - 10px);
+    max-width: 370px;
     border: none;
     border-radius: 0;
     z-index: 99;
