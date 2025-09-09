@@ -10,11 +10,12 @@
       name="description"
       content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
     />
-    <title>TARA Bay Owner | Branches</title>
+    <title>TARA Bay Manager | About</title>
     <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
     <link rel="stylesheet" href="../css/intlTelInput.min.css" />
+    <link rel="stylesheet" href="../css/select2.min.css" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
 
@@ -35,16 +36,15 @@
             <h6 class="sidebar-title">القائمة الرئيسية</h6>
             <div class="dashboard_header-info">
               <div class="info-item">
-                <span class="title">حالة الحساب</span>
-                <span class="status active">فعال</span>
-                <!-- <span class="status inactive">غير فعال</span> -->
+                <span class="title">اسم الفرع</span>
+                <span class="value">R-3</span>
+              </div>
+              <div class="info-item">
+                <span class="title">عنوان الفرع</span>
+                <span class="value">الرياض - حي الياسمين</span>
               </div>
               <div class="info-item">
                 <span class="title">تاريخ إنشاء الحساب</span>
-                <span class="value">2025-05-01</span>
-              </div>
-              <div class="info-item">
-                <span class="title">تاريخ انتهاء الاشتراك</span>
                 <span class="value">2025-06-01</span>
               </div>
             </div>
@@ -61,43 +61,13 @@
               </li>
               <li class="sidebar_menu-item">
                 <a
-                  href="notifications.html"
+                  href="orders_list.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
-                  <i class="fal fa-bell"></i>
-                  سجل الإشعارات
+                  <i class="fal fa-square-list"></i>
+                  قائمة الطلبات
                 </a>
-              </li>
-              <li class="sidebar_menu-item has-children active">
-                <a
-                  href="#!"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-shop"></i>
-                  إدارة الفروع
-                </a>
-                <ul class="sidebar_children" style="display: block">
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="branches_add.html"
-                    >
-                      إضافة فرع جديد
-                    </a>
-                  </li>
-                  <li class="children_menu-item active">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="branches_list.html"
-                    >
-                      قائمة الفروع
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="sidebar_menu-item has-children">
                 <a
@@ -129,45 +99,65 @@
                   </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children">
+              <li class="sidebar_menu-item">
                 <a
-                  href="#!"
+                  href="add_direct_order.html"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-plus-circle"></i>
+                  إنشاء طلب مباشر
+                </a>
+              </li>
+              <li class="sidebar_menu-item">
+                <a
+                  href="payments_list.html"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-credit-card"></i>
+                  سجل مدفوعات العملاء
+                </a>
+              </li>
+              <li class="sidebar_menu-item">
+                <a
+                  href="menu_list.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
                   <i class="fal fa-plate-utensils"></i>
                   قائمة الطعام
                 </a>
+              </li>
+              <li class="sidebar_menu-item has-children">
+                <a
+                  href="#!"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-users-gear"></i>
+                  إدارة الموظفين
+                </a>
                 <ul class="sidebar_children">
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
-                      href="categories_add.html"
+                      href="employees_add.html"
                     >
-                      إضافة تصنيف جديد
+                      إضافة موظف جديد
                     </a>
                   </li>
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
-                      href="categories_list.html"
+                      href="employees_list.html"
                     >
-                      قائمة التصنيفات
+                      قائمة الموظفين
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li class="sidebar_menu-item">
-                <a
-                  href="orders_list.html"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-square-list"></i>
-                  قائمة الطلبات
-                </a>
               </li>
               <li class="sidebar_menu-item">
                 <a
@@ -181,53 +171,13 @@
               </li>
               <li class="sidebar_menu-item">
                 <a
-                  href="subscriptions_list.html"
+                  href="notifications.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
-                  <i class="fal fa-calendar-days"></i>
-                  سجل الإشتراكات
+                  <i class="fal fa-bell"></i>
+                  سجل الإشعارات
                 </a>
-              </li>
-              <li class="sidebar_menu-item">
-                <a
-                  href="payments_list.html"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-credit-card"></i>
-                  سجل مدفوعات العملاء
-                </a>
-              </li>
-              <li class="sidebar_menu-item has-children">
-                <a
-                  href="#!"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-wallet"></i>
-                  محفظة المستحقات
-                </a>
-                <ul class="sidebar_children">
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="financial_list.html"
-                    >
-                      سجل المستحقات
-                    </a>
-                  </li>
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="financial_requests.html"
-                    >
-                      طلبات السحب
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="sidebar_menu-item has-children">
                 <a
@@ -257,18 +207,9 @@
                       بيانات النشاط التجاري
                     </a>
                   </li>
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="account_payments.html"
-                    >
-                      طرق استقبال المدفوعات
-                    </a>
-                  </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children">
+              <li class="sidebar_menu-item has-children active">
                 <a
                   href="#!"
                   class="sidebar_menu-link"
@@ -277,8 +218,8 @@
                   <i class="fal fa-circle-info"></i>
                   المساعدة والدعم
                 </a>
-                <ul class="sidebar_children">
-                  <li class="children_menu-item">
+                <ul class="sidebar_children" style="display: block">
+                  <li class="children_menu-item active">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
@@ -348,16 +289,15 @@
               </a>
               <div class="dashboard_header-info">
                 <div class="info-item">
-                  <span class="title">حالة الحساب</span>
-                  <span class="status active">فعال</span>
-                  <!-- <span class="status inactive">غير فعال</span> -->
+                  <span class="title">اسم الفرع</span>
+                  <span class="value">R-3</span>
+                </div>
+                <div class="info-item">
+                  <span class="title">عنوان الفرع</span>
+                  <span class="value">الرياض - حي الياسمين</span>
                 </div>
                 <div class="info-item">
                   <span class="title">تاريخ إنشاء الحساب</span>
-                  <span class="value">2025-05-01</span>
-                </div>
-                <div class="info-item">
-                  <span class="title">تاريخ انتهاء الاشتراك</span>
                   <span class="value">2025-06-01</span>
                 </div>
               </div>
@@ -381,13 +321,13 @@
                     <span class="img">
                       <img
                         loading="lazy"
-                        src="../images/users/1.jpg"
+                        src="../images/users/5.jpg"
                         alt="avatar"
                         class="img-contain"
                       />
                     </span>
                     <p class="text">
-                      <span class="name">باربكيو تايم</span>
+                      <span class="name">فهد الحربي</span>
                       <span class="id">الرقم التعريفي ACC-100384</span>
                     </p>
                   </div>
@@ -430,15 +370,6 @@
                     </li>
                     <li>
                       <a
-                        href="subscriptions_list.html"
-                        class="account-link"
-                        aria-label="dashboard menu link"
-                      >
-                        سجل الإشتراكات
-                      </a>
-                    </li>
-                    <li>
-                      <a
                         href="payments_list.html"
                         class="account-link"
                         aria-label="dashboard menu link"
@@ -476,145 +407,230 @@
                   </a>
                 </li>
                 <li>
-                  <a href="branches_list.html" aria-label="breadcrumb link">
-                    قائمة الفروع
-                  </a>
+                  <a href="about.html" aria-label="breadcrumb link"> من نحن </a>
                 </li>
               </ul>
             </div>
             <main class="dashboard-main">
-              <h1 class="dashboard_page-title">قائمة الفروع</h1>
-              <div class="dashboard_table-responsive">
-                <div class="dashboard_table-content">
-                  <table class="dashboard-table">
-                    <tr>
-                      <th>#</th>
-                      <th>تاريخ ووقت الإضافة</th>
-                      <th>اسم الفرع</th>
-                      <th>عنوان الفرع</th>
-                      <th>المدير</th>
-                      <th>جوال المدير</th>
-                      <th style="text-align: center">الأصناف</th>
-                      <th style="text-align: center">الطلبات</th>
-                      <th style="text-align: center">تعديل</th>
-                      <th>الحالة</th>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
-                      <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
+              <h1 class="dashboard_page-title">من نحن</h1>
+
+              <div class="dashboard-info">
+                <!-- Start Cover -->
+                <main class="cover-section">
+                  <div class="container">
+                    <div class="cover-img">
+                      <img
+                        loading="lazy"
+                        src="../images/cover/1.jpg"
+                        alt="Cover"
+                        class="img-cover"
+                      />
+                    </div>
+                  </div>
+                </main>
+                <!-- End Cover -->
+
+                <!-- Start Page Content -->
+                <section class="about-section about_page-main">
+                  <div class="container">
+                    <div class="about-content">
+                      <div class="section-head">
+                        <h2 class="section-title">
+                          تارا باي.. نظامًا إلكترونيًا مبتكرًا لإدارة المطاعم
+                          والكافيهات والفروع وقوائم الطعام والطلبات
+                        </h2>
+                        <p class="section-desc">
+                          نحن في "تارا باي" نقدم نظامًا إلكترونيًا مبتكرًا
+                          لإدارة المطاعم والكافيهات والفروع وقوائم الطعام
+                          والطلبات. نسعى لتمكين أصحاب الأعمال من تحسين تجربة
+                          العملاء وزيادة الكفاءة التشغيلية من خلال حلول ذكية
+                          وسهلة الاستخدام.
+                        </p>
+                      </div>
+                      <div class="about-features">
+                        <div class="about_feature-item">
+                          <span class="icon">
+                            <i class="fal fa-eye"> </i>
+                          </span>
+                          <h3 class="title">رؤيتنا</h3>
+                          <p class="desc">
+                            أن نكون المنصة الرائدة في التحول الرقمي لقطاع
+                            المطاعم والكافيهات في العالم العربي، من خلال تقديم
+                            حلول تقنية ذكية تسهّل الإدارة، وتُثري تجربة العميل،
+                            وتسهم في نمو واستدامة الأعمال.
+                          </p>
                         </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
-                      <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
+                        <div class="about_feature-item">
+                          <span class="icon">
+                            <i class="fal fa-scroll"> </i>
+                          </span>
+                          <h3 class="title">رسالتنا</h3>
+                          <p class="desc">
+                            نوفّر نظامًا متكاملًا لإدارة وتشغيل المطاعم
+                            والكافيهات، يعتمد على التكنولوجيا، لنمكّن أصحاب
+                            الأعمال من متابعة عملياتهم بكفاءة، وتحقيق أعلى
+                            مستويات الخدمة للعملاء، من لحظة الطلب حتى إتمام
+                            الدفع.
+                          </p>
                         </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
-                      <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="features-section about_page-features">
+                  <div class="pattern">
+                    <img
+                      loading="lazy"
+                      src="../images/pattern/features.svg"
+                      class="img-contain"
+                      alt="pattern"
+                    />
+                  </div>
+                  <div class="container">
+                    <div class="features-content">
+                      <div class="section-head">
+                        <h2 class="section-title">قيمنا الأساسية</h2>
+                      </div>
+                      <div class="features-grid">
+                        <div class="feature-item">
+                          <span class="icon">
+                            <i class="fal fa-head-side-brain"></i>
+                          </span>
+                          <h3 class="title">الابتكار</h3>
+                          <p class="desc">
+                            نبحث دائمًا عن حلول جديدة تواكب احتياجات السوق وتقدم
+                            تجربة استخدام استثنائية
+                          </p>
                         </div>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
+                        <div class="feature-item">
+                          <span class="icon">
+                            <i class="fal fa-award"></i>
+                          </span>
+                          <h3 class="title">التميز</h3>
+                          <p class="desc">
+                            نحرص على جودة كل تفصيل، من واجهة النظام وحتى خدمة ما
+                            بعد البيع
+                          </p>
+                        </div>
+                        <div class="feature-item">
+                          <span class="icon">
+                            <i class="fal fa-book-open-reader"></i>
+                          </span>
+                          <h3 class="title">التفاعل</h3>
+                          <p class="desc">
+                            نجاحنا الحقيقي يبدأ من رضا شركائنا، ونعمل على بناء
+                            علاقة طويلة الأمد قائمة على الثقة والدعم المستمر
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="testimonials-section">
+                  <div class="container">
+                    <div class="section-head">
+                      <span class="section-icon">
+                        <i class="fal fa-sharp fa-quote-left-alt"></i>
+                      </span>
+                      <h2 class="section-title">
+                        ثقة تتزايد كل يوم... وتجارب نجاح نعتز بها
+                      </h2>
+                    </div>
+                    <div class="testimonials-slider custom-slider">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="testimonial-item">
+                              <div class="img">
+                                <img
+                                  loading="lazy"
+                                  src="../images/testimonials/1.jpg"
+                                  alt="Testimonial"
+                                  class="img-cover"
+                                />
+                              </div>
+                              <h3 class="title">
+                                فهد العتيبي – مالك سلسلة كافيهات بالرياض
+                              </h3>
+                              <p class="desc">
+                                من أول أسبوع من استخدام تارا باي لاحظنا فرق كبير
+                                في سرعة الطلبات وتنظيم الفروع. المنصة سهلة
+                                الاستخدام والدعم الفني ممتاز. اختصرت علينا وقت
+                                وجهد كبير، وتحمست للتوسع بفروع جديدة بفضل النظام
+                              </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial-item">
+                              <div class="img">
+                                <img
+                                  loading="lazy"
+                                  src="../images/testimonials/2.jpg"
+                                  alt="Testimonial"
+                                  class="img-cover"
+                                />
+                              </div>
+                              <h3 class="title">
+                                أمل الزهراني – مديرة مطعم في جدة
+                              </h3>
+                              <p class="desc">
+                                جربت أكثر من نظام سابقًا لكن ولا واحد أعطاني
+                                السلاسة والتنظيم اللي لقيته في تارا باي. صار
+                                عندنا تحكم كامل بالطاولات، وسرعة الاستجابة زادت،
+                                والطلب صار يوصل للمطبخ بدون أي لخبطة. تجربة
+                                ممتازة وأوصي فيها بشدة
+                              </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial-item">
+                              <div class="img">
+                                <img
+                                  loading="lazy"
+                                  src="../images/testimonials/3.jpg"
+                                  alt="Testimonial"
+                                  class="img-cover"
+                                />
+                              </div>
+                              <h3 class="title">
+                                ندى المطيري – صاحبة كافيه نسائي في الدمام
+                              </h3>
+                              <p class="desc">
+                                واجهنا مشاكل سابقة مع أنظمة أخرى، لكن تارا باي
+                                وفر كل اللي نحتاجه: تنظيم، تقارير واضحة، ودعم
+                                فني سريع
+                              </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="testimonial-item">
+                              <div class="img">
+                                <img
+                                  loading="lazy"
+                                  src="../images/testimonials/4.jpg"
+                                  alt="Testimonial"
+                                  class="img-cover"
+                                />
+                              </div>
+                              <h3 class="title">
+                                سارة العمري – مديرة تشغيل مطعم فاين دايننغ بجدة
+                              </h3>
+                              <p class="desc">
+                                أكثر ميزة أحببتها هي الطلب الذاتي عبر الـ QR.
+                                العملاء صاروا يطلبون بكل راحة، والفريق عندنا قدر
+                                يركز أكثر على الخدمة
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </section>
               </div>
             </main>
             <footer class="dashboard-footer">
@@ -656,9 +672,7 @@
               <i class="fat fa-right-from-bracket"></i>
             </span>
             <h2 class="modal-head">تسجيل خروج</h2>
-            <p class="modal-description">
-              هل أنت متأكد أنك تريد تسجيل الخروج؟
-            </p>
+            <p class="modal-description">هل أنت متأكد أنك تريد تسجيل الخروج؟</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="modal-btn default-btn">تأكيد</button>
@@ -678,6 +692,8 @@
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/intlTelInput.min.js"></script>
+    <script src="../js/select2.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/svg.js"></script>
   </body>
 </html>

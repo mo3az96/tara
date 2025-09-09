@@ -97,6 +97,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  min-height: 48px;
   gap: 0 20px;
   @include md {
     grid-template-columns: 1fr 1fr;
@@ -170,7 +171,7 @@
     @include rtl {
       .form-control {
         direction: ltr;
-        text-align: right;
+        text-align: left;
       }
       .form-label,
       .form-error {
@@ -802,6 +803,11 @@
 .iconed-input {
   position: relative;
   width: 100%;
+  .form-control {
+    @include rtl {
+      text-align: right;
+    }
+  }
   .input-icon {
     position: absolute;
     top: 50%;
@@ -812,6 +818,8 @@
     width: 20px;
     display: flex;
     align-items: center;
+    font-size: 14px;
+    font-weight: 400;
     justify-content: center;
     svg {
       fill: currentColor;

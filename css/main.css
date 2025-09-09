@@ -611,6 +611,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  min-height: 48px;
   gap: 0 20px;
 }
 @media (max-width: 1199px) {
@@ -700,7 +701,7 @@ html[dir=ltr] .form-control::placeholder, html[dir=ltr] .form-control:has([hidde
 }
 html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-control {
   direction: ltr;
-  text-align: right;
+  text-align: left;
 }
 html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-label,
 html[dir=rtl] .form-group:has([type=tel][intlTelInput]) .form-error {
@@ -1326,6 +1327,9 @@ html[dir=rtl] .date-content .input-content .form-control {
   position: relative;
   width: 100%;
 }
+html[dir=rtl] .iconed-input .form-control {
+  text-align: right;
+}
 .iconed-input .input-icon {
   position: absolute;
   top: 50%;
@@ -1336,6 +1340,8 @@ html[dir=rtl] .date-content .input-content .form-control {
   width: 20px;
   display: flex;
   align-items: center;
+  font-size: 14px;
+  font-weight: 400;
   justify-content: center;
 }
 .iconed-input .input-icon svg {
@@ -4739,20 +4745,51 @@ html[dir=ltr] .side-nav .nav-body a::before {
   border: 1px solid #f2f2f2;
   border-top: none;
   border-radius: 0 0 10px 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 11px 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+@media (max-width: 1199px) {
+  .order_main-body {
+    gap: 30px;
+  }
 }
 @media (max-width: 991px) {
   .order_main-body {
-    gap: 10px 15px;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media (max-width: 767px) {
   .order_main-body {
-    grid-template-columns: 1fr;
     padding: 20px;
   }
+}
+.order_main-body .order-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex: 1;
+  gap: 11px 88px;
+}
+@media (max-width: 991px) {
+  .order_main-body .order-info {
+    gap: 10px 15px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .order_main-body .order-info {
+    grid-template-columns: 1fr;
+  }
+}
+.order_main-body .order-qr {
+  width: 121px;
+  aspect-ratio: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .order_main-body .order_main-item {
   display: flex;
@@ -4773,6 +4810,9 @@ html[dir=ltr] .side-nav .nav-body a::before {
 }
 .order_main-body .value {
   font-weight: 700;
+}
+.order_main-body .value span {
+  color: #DC2829;
 }
 .order_main-body .value a {
   direction: ltr;
@@ -4810,6 +4850,14 @@ html[dir=ltr] .side-nav .nav-body a::before {
   background-color: var(--color);
   opacity: 0.2;
   z-index: -1;
+}
+.order_main-body:has(.order-qr) .order-info {
+  gap: 11px 60px;
+}
+@media (max-width: 991px) {
+  .order_main-body:has(.order-qr) .order-info {
+    gap: 10px 15px;
+  }
 }
 
 .orders-table {

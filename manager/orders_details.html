@@ -10,7 +10,7 @@
       name="description"
       content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
     />
-    <title>TARA Bay Owner | Branches</title>
+    <title>TARA Bay Manager | Orders</title>
     <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
     <link rel="stylesheet" href="../css/fontawesome.min.css" />
@@ -35,16 +35,15 @@
             <h6 class="sidebar-title">القائمة الرئيسية</h6>
             <div class="dashboard_header-info">
               <div class="info-item">
-                <span class="title">حالة الحساب</span>
-                <span class="status active">فعال</span>
-                <!-- <span class="status inactive">غير فعال</span> -->
+                <span class="title">اسم الفرع</span>
+                <span class="value">R-3</span>
+              </div>
+              <div class="info-item">
+                <span class="title">عنوان الفرع</span>
+                <span class="value">الرياض - حي الياسمين</span>
               </div>
               <div class="info-item">
                 <span class="title">تاريخ إنشاء الحساب</span>
-                <span class="value">2025-05-01</span>
-              </div>
-              <div class="info-item">
-                <span class="title">تاريخ انتهاء الاشتراك</span>
                 <span class="value">2025-06-01</span>
               </div>
             </div>
@@ -59,45 +58,15 @@
                   الصفحة الرئيسية
                 </a>
               </li>
-              <li class="sidebar_menu-item">
+              <li class="sidebar_menu-item active">
                 <a
-                  href="notifications.html"
+                  href="orders_list.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
-                  <i class="fal fa-bell"></i>
-                  سجل الإشعارات
+                  <i class="fal fa-square-list"></i>
+                  قائمة الطلبات
                 </a>
-              </li>
-              <li class="sidebar_menu-item has-children active">
-                <a
-                  href="#!"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-shop"></i>
-                  إدارة الفروع
-                </a>
-                <ul class="sidebar_children" style="display: block">
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="branches_add.html"
-                    >
-                      إضافة فرع جديد
-                    </a>
-                  </li>
-                  <li class="children_menu-item active">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="branches_list.html"
-                    >
-                      قائمة الفروع
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="sidebar_menu-item has-children">
                 <a
@@ -129,45 +98,65 @@
                   </li>
                 </ul>
               </li>
-              <li class="sidebar_menu-item has-children">
+              <li class="sidebar_menu-item">
                 <a
-                  href="#!"
+                  href="add_direct_order.html"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-plus-circle"></i>
+                  إنشاء طلب مباشر
+                </a>
+              </li>
+              <li class="sidebar_menu-item">
+                <a
+                  href="payments_list.html"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-credit-card"></i>
+                  سجل مدفوعات العملاء
+                </a>
+              </li>
+              <li class="sidebar_menu-item">
+                <a
+                  href="menu_list.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
                   <i class="fal fa-plate-utensils"></i>
                   قائمة الطعام
                 </a>
+              </li>
+              <li class="sidebar_menu-item has-children">
+                <a
+                  href="#!"
+                  class="sidebar_menu-link"
+                  aria-label="dashboard menu link"
+                >
+                  <i class="fal fa-users-gear"></i>
+                  إدارة الموظفين
+                </a>
                 <ul class="sidebar_children">
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
-                      href="categories_add.html"
+                      href="employees_add.html"
                     >
-                      إضافة تصنيف جديد
+                      إضافة موظف جديد
                     </a>
                   </li>
                   <li class="children_menu-item">
                     <a
                       class="children_menu-link"
                       aria-label="dashboard menu link"
-                      href="categories_list.html"
+                      href="employees_list.html"
                     >
-                      قائمة التصنيفات
+                      قائمة الموظفين
                     </a>
                   </li>
                 </ul>
-              </li>
-              <li class="sidebar_menu-item">
-                <a
-                  href="orders_list.html"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-square-list"></i>
-                  قائمة الطلبات
-                </a>
               </li>
               <li class="sidebar_menu-item">
                 <a
@@ -181,53 +170,13 @@
               </li>
               <li class="sidebar_menu-item">
                 <a
-                  href="subscriptions_list.html"
+                  href="notifications.html"
                   class="sidebar_menu-link"
                   aria-label="dashboard menu link"
                 >
-                  <i class="fal fa-calendar-days"></i>
-                  سجل الإشتراكات
+                  <i class="fal fa-bell"></i>
+                  سجل الإشعارات
                 </a>
-              </li>
-              <li class="sidebar_menu-item">
-                <a
-                  href="payments_list.html"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-credit-card"></i>
-                  سجل مدفوعات العملاء
-                </a>
-              </li>
-              <li class="sidebar_menu-item has-children">
-                <a
-                  href="#!"
-                  class="sidebar_menu-link"
-                  aria-label="dashboard menu link"
-                >
-                  <i class="fal fa-wallet"></i>
-                  محفظة المستحقات
-                </a>
-                <ul class="sidebar_children">
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="financial_list.html"
-                    >
-                      سجل المستحقات
-                    </a>
-                  </li>
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="financial_requests.html"
-                    >
-                      طلبات السحب
-                    </a>
-                  </li>
-                </ul>
               </li>
               <li class="sidebar_menu-item has-children">
                 <a
@@ -255,15 +204,6 @@
                       href="account_business.html"
                     >
                       بيانات النشاط التجاري
-                    </a>
-                  </li>
-                  <li class="children_menu-item">
-                    <a
-                      class="children_menu-link"
-                      aria-label="dashboard menu link"
-                      href="account_payments.html"
-                    >
-                      طرق استقبال المدفوعات
                     </a>
                   </li>
                 </ul>
@@ -348,16 +288,15 @@
               </a>
               <div class="dashboard_header-info">
                 <div class="info-item">
-                  <span class="title">حالة الحساب</span>
-                  <span class="status active">فعال</span>
-                  <!-- <span class="status inactive">غير فعال</span> -->
+                  <span class="title">اسم الفرع</span>
+                  <span class="value">R-3</span>
+                </div>
+                <div class="info-item">
+                  <span class="title">عنوان الفرع</span>
+                  <span class="value">الرياض - حي الياسمين</span>
                 </div>
                 <div class="info-item">
                   <span class="title">تاريخ إنشاء الحساب</span>
-                  <span class="value">2025-05-01</span>
-                </div>
-                <div class="info-item">
-                  <span class="title">تاريخ انتهاء الاشتراك</span>
                   <span class="value">2025-06-01</span>
                 </div>
               </div>
@@ -381,13 +320,13 @@
                     <span class="img">
                       <img
                         loading="lazy"
-                        src="../images/users/1.jpg"
+                        src="../images/users/5.jpg"
                         alt="avatar"
                         class="img-contain"
                       />
                     </span>
                     <p class="text">
-                      <span class="name">باربكيو تايم</span>
+                      <span class="name">فهد الحربي</span>
                       <span class="id">الرقم التعريفي ACC-100384</span>
                     </p>
                   </div>
@@ -430,15 +369,6 @@
                     </li>
                     <li>
                       <a
-                        href="subscriptions_list.html"
-                        class="account-link"
-                        aria-label="dashboard menu link"
-                      >
-                        سجل الإشتراكات
-                      </a>
-                    </li>
-                    <li>
-                      <a
                         href="payments_list.html"
                         class="account-link"
                         aria-label="dashboard menu link"
@@ -476,142 +406,221 @@
                   </a>
                 </li>
                 <li>
-                  <a href="branches_list.html" aria-label="breadcrumb link">
-                    قائمة الفروع
+                  <a href="orders_list.html" aria-label="breadcrumb link">
+                    قائمة الطلبات
+                  </a>
+                </li>
+                <li>
+                  <a href="orders_details.html" aria-label="breadcrumb link">
+                    تفاصيل الطلب (#1299)
                   </a>
                 </li>
               </ul>
             </div>
             <main class="dashboard-main">
-              <h1 class="dashboard_page-title">قائمة الفروع</h1>
+              <h1 class="dashboard_page-title">تفاصيل الطلب (#1299)</h1>
+              <div class="order_details-main">
+                <div class="order_main-head">
+                  <i class="fal fa-info-circle"></i>
+                  بيانات الطلب
+                </div>
+                <div class="order_main-body">
+                  <div class="order-info">
+                    <div class="order_main-item">
+                      <span class="title">تاريخ ووقت الطلب</span>
+                      <strong class="value">2025/05/10 - 10:39</strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">اسم العميل</span>
+                      <strong class="value">عمار عثمان</strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">حالة الطلب</span>
+                      <span class="status" style="--color: #34b7ea"
+                        >تم التجهيز</span
+                      >
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">اسم القائم بانشاء الطلب</span>
+                      <strong class="value">
+                        سالم الغامدي <span>(موظف)</span>
+                      </strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">اسم الفرع</span>
+                      <strong class="value">R-3</strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">رقم الجوال</span>
+                      <strong class="value">
+                        <a href="tel:0541234567"> 0541234567 </a>
+                      </strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">رقم الطاولة</span>
+                      <strong class="value">7</strong>
+                    </div>
+                    <div class="order_main-item">
+                      <span class="title">طريقة الدفع</span>
+                      <strong class="value">الدفع الإلكتروني</strong>
+                    </div>
+                  </div>
+                  <div class="order-qr">
+                    <img loading="lazy" src="../images/qr.svg" alt="qr" class="img-contain" />
+                  </div>
+                </div>
+              </div>
+              <h2 class="dashboard_page-title">قائمة الطلبات</h2>
+              <div class="dashboard_table-responsive orders-table">
+                <div class="dashboard_table-content">
+                  <table class="dashboard-table">
+                    <tr>
+                      <th colspan="3">المنتج</th>
+                      <th colspan="1">السعر</th>
+                      <th colspan="1">الكمية</th>
+                      <th colspan="1">الإجمالي</th>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <div class="table-product">
+                          <div class="product-img">
+                            <img
+                              loading="lazy"
+                              src="../images/products/1.jpg"
+                              class="img-cover"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="product-info">
+                            <h3 class="product-name">برجر بريسكت مدخّن</h3>
+                            <p class="product-desc">
+                              قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                              تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                              طازج
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                      <td colspan="1">
+                        <span class="table-price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </td>
+                      <td colspan="1">3</td>
+                      <td colspan="1">
+                        <span class="table-price">
+                          150
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="6">
+                        <div class="table-totals">
+                          <div class="total-item">
+                            <span class="title">إجمالي المستحق بدون ضريبة</span>
+                            <strong class="value">
+                              <span class="table-price">
+                                150
+                                <img
+                                  loading="lazy"
+                                  src="../images/icons/sar.svg"
+                                  alt="sar"
+                                  class="svg"
+                                />
+                              </span>
+                            </strong>
+                          </div>
+                          <div class="total-item">
+                            <span class="title">ضريبة القيمة المضافة %15</span>
+                            <strong class="value">
+                              <span class="table-price">
+                                22.5
+                                <img
+                                  loading="lazy"
+                                  src="../images/icons/sar.svg"
+                                  alt="sar"
+                                  class="svg"
+                                />
+                              </span>
+                            </strong>
+                          </div>
+                          <div class="total-item">
+                            <span class="title">رسوم الخدمة</span>
+                            <strong class="value">
+                              <span class="table-price">
+                                5
+                                <img
+                                  loading="lazy"
+                                  src="../images/icons/sar.svg"
+                                  alt="sar"
+                                  class="svg"
+                                />
+                              </span>
+                            </strong>
+                          </div>
+                          <div class="total-item">
+                            <span class="title"
+                              >إجمالي المستحق بعد الضريبة</span
+                            >
+                            <strong class="value">
+                              <span class="table-price">
+                                177.5
+                                <img
+                                  loading="lazy"
+                                  src="../images/icons/sar.svg"
+                                  alt="sar"
+                                  class="svg"
+                                />
+                              </span>
+                            </strong>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <h2 class="dashboard_page-title">سجل حالات الطلب</h2>
               <div class="dashboard_table-responsive">
                 <div class="dashboard_table-content">
                   <table class="dashboard-table">
                     <tr>
                       <th>#</th>
                       <th>تاريخ ووقت الإضافة</th>
-                      <th>اسم الفرع</th>
-                      <th>عنوان الفرع</th>
-                      <th>المدير</th>
-                      <th>جوال المدير</th>
-                      <th style="text-align: center">الأصناف</th>
-                      <th style="text-align: center">الطلبات</th>
-                      <th style="text-align: center">تعديل</th>
                       <th>الحالة</th>
+                      <th>القائم بتغيير الحالة</th>
                     </tr>
                     <tr>
                       <td>1</td>
                       <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
+                      <td>
+                        <span class="table-status" style="--color: #6667a7">
+                          جاري التوصيل
+                        </span>
+                      </td>
                       <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" checked />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
-                        </div>
-                      </td>
                     </tr>
                     <tr>
                       <td>1</td>
                       <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
+                      <td>
+                        <span class="table-status" style="--color: #f8324a">
+                          به مشكلة
+                        </span>
+                      </td>
                       <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>2025/05/10 - 10:39</td>
-                      <td>R-3</td>
-                      <td>الرياض، حي الياسمين</td>
-                      <td>سالم الغامدي</td>
-                      <td>
-                        <a href="tel:0541234567" class="table-contact">
-                          0541234567
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_menu.html" class="table-link">
-                          <i class="fal fa-plate-utensils"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_orders.html" class="table-link">
-                          <i class="fal fa-square-list"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <a href="branches_add.html" class="table-link">
-                          <i class="fal fa-pen-to-square"></i>
-                        </a>
-                      </td>
-                      <td>
-                        <div class="table-switch">
-                          <label class="switch">
-                            <input type="checkbox" />
-                            <span class="slider">
-                              <span class="text on">فعال</span>
-                              <span class="text off">معطل</span>
-                            </span>
-                          </label>
-                        </div>
-                      </td>
                     </tr>
                   </table>
                 </div>
@@ -656,9 +665,7 @@
               <i class="fat fa-right-from-bracket"></i>
             </span>
             <h2 class="modal-head">تسجيل خروج</h2>
-            <p class="modal-description">
-              هل أنت متأكد أنك تريد تسجيل الخروج؟
-            </p>
+            <p class="modal-description">هل أنت متأكد أنك تريد تسجيل الخروج؟</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="modal-btn default-btn">تأكيد</button>
@@ -679,5 +686,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/intlTelInput.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/svg.js"></script>
   </body>
 </html>
