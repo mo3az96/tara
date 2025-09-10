@@ -8,14 +8,14 @@
 
     &.modal-lg {
       @media (min-width: 992px) {
-        --bs-modal-width: 500px;
+        --bs-modal-width: 502px;
       }
     }
   }
   .modal-content {
     border-radius: 10px;
     border: none;
-    padding: 50px;
+    padding: 50px 40px;
     position: relative;
     max-height: min(600px, calc(100dvh - 30px));
     overflow-y: auto;
@@ -133,4 +133,13 @@
   line-height: 1.5625;
   color: $textColor;
   margin: 0 0 30px;
+}
+
+.modal-qr {
+  width: 131px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }

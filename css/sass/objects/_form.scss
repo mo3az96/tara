@@ -20,13 +20,13 @@
     &.three {
       gap: 0 15px;
     }
-    &.three {
-      grid-template-columns: repeat(2, 1fr);
-    }
   }
   @include sm {
     grid-template-columns: 1fr 1fr;
     gap: 0 25px;
+    &.three {
+      grid-template-columns: repeat(2, 1fr);
+    }
     &.two,
     &.three {
       gap: 0 25px;
@@ -39,6 +39,12 @@
       grid-template-columns: 1fr;
     }
   }
+}
+.group-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: $textColor;
+  margin: 0 0 20px;
 }
 .form-group {
   margin: 0 0 30px;
@@ -898,5 +904,34 @@
   }
   input {
     display: none;
+  }
+}
+
+.quantity-content {
+  position: relative;
+  width: 100%;
+  .form-control {
+    text-align: center;
+  }
+  .quantity-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-size: 24px;
+    --postion: 14px;
+    @include focus(#dee1e6);
+    &:hover {
+      color: $primaryColor;
+    }
+    &.plus-btn {
+      inset-inline-start: var(--postion);
+    }
+    &.minus-btn {
+      inset-inline-end: var(--postion);
+    }
   }
 }
