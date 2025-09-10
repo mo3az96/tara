@@ -99,6 +99,11 @@
     max-width: 195px;
     margin: 0;
   }
+  .payment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .modal-icon {
   font-size: 72px;

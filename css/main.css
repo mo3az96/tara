@@ -1854,6 +1854,11 @@ html[dir=rtl] .telephone-preview .form-control {
   max-width: 195px;
   margin: 0;
 }
+.modal .payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 .modal-icon {
   font-size: 72px;
