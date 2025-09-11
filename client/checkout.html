@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
+    />
+    <title>TARA Bay Client | Checkout</title>
+    <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body class="client-body">
+    <div class="container-fluid">
+      <section class="client-content">
+        <header class="client-header">
+          <a href="index.html" class="logo" aria-label="logo">
+            <img
+              loading="lazy"
+              src="../images/logo.svg"
+              alt="logo"
+              class="img-contain"
+            />
+          </a>
+          <div class="client_header-info">
+            <div class="info-item">
+              <span class="title">اسم الفرع</span>
+              <span class="value">R-3</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الطاولة</span>
+              <span class="value">7</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الطلب</span>
+              <span class="value">#123</span>
+            </div>
+            <div class="info-item">
+              <span class="title">اسم العميل</span>
+              <span class="value">عبدالله صالح</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الجوال</span>
+              <span class="value">
+                <a href="tel:0541234567">0541234567</a>
+              </span>
+            </div>
+          </div>
+          <div class="client_header-tools">
+            <a
+              href="#!"
+              class="header-icon language-icon"
+              aria-label="language icon"
+            >
+              <i class="fal fa-globe"></i>
+            </a>
+
+            <div class="client_account-info">
+              <span class="img">
+                <img
+                  loading="lazy"
+                  src="../images/users/1.jpg"
+                  alt="avatar"
+                  class="img-contain"
+                />
+              </span>
+              <span class="name">باربكيو تايم</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="client-main">
+          <div class="client_main-row">
+            <div class="client_main-content">
+              <h1 class="client_main-title">ملخص الطلب والدفع</h1>
+              <div class="exclamation-hint">
+                <i class="fat fa-exclamation-circle"></i>
+                <p>
+                  عند الضغط على زر "تأكيد الطلب والدفع"، لا يمكن لأي مستخدم آخر
+                  إتمام العملية، حتى إذا قام بمسح
+                </p>
+              </div>
+              <div class="client_checkout-content">
+                <h3 class="client_checkout-title">ملخص الطلب والدفع</h3>
+                <div class="client_products-list cart-products">
+                  <div class="product-item">
+                    <div class="info">
+                      <div class="text">
+                        <span class="title">برجر بريسكت مدخّن</span>
+                      </div>
+                      <strong class="price">
+                        30
+                        <img
+                          loading="lazy"
+                          src="../images/icons/sar.svg"
+                          alt="sar"
+                          class="svg"
+                        />
+                      </strong>
+                      <div class="quantity-content">
+                        <input
+                          type="number"
+                          class="form-control"
+                          required
+                          min="1"
+                          max="100"
+                          value="1"
+                          readonly
+                        />
+                        <button
+                          class="quantity-btn plus-btn"
+                          type="button"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        >
+                          <i class="fal fa-plus-circle"></i>
+                        </button>
+                        <button
+                          class="quantity-btn minus-btn"
+                          type="button"
+                          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                        >
+                          <i class="fal fa-minus-circle"></i>
+                        </button>
+                      </div>
+                      <strong class="price total">
+                        30
+                        <img
+                          loading="lazy"
+                          src="../images/icons/sar.svg"
+                          alt="sar"
+                          class="svg"
+                        />
+                      </strong>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="client_checkout-title">طريقة الدفع</h3>
+                <div class="payment-list">
+                  <label class="payment-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      aria-label="payment"
+                      required
+                    />
+                    <span class="mark"></span>
+                    <span class="text"> كاش </span>
+                  </label>
+                  <label class="payment-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      aria-label="payment"
+                      required
+                    />
+                    <span class="mark"></span>
+                    <span class="text"> جهاز تحصيل </span>
+                  </label>
+                  <label class="payment-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      aria-label="payment"
+                      required
+                    />
+                    <span class="mark"></span>
+                    <span class="text"> فيزا/ ماستركارد </span>
+                    <div class="logos">
+                      <span>
+                        <img
+                          loading="lazy"
+                          src="../images/payments/1.png"
+                          alt="mastercard"
+                          class="img-contain"
+                        />
+                      </span>
+                      <span>
+                        <img
+                          loading="lazy"
+                          src="../images/payments/2.png"
+                          alt="visa"
+                          class="img-contain"
+                        />
+                      </span>
+                    </div>
+                  </label>
+                  <label class="payment-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      aria-label="payment"
+                      required
+                    />
+                    <span class="mark"></span>
+                    <span class="text"> ابل باي </span>
+                    <div class="logos">
+                      <span>
+                        <img
+                          loading="lazy"
+                          src="../images/payments/3.png"
+                          alt="apple pay"
+                          class="img-contain"
+                        />
+                      </span>
+                    </div>
+                  </label>
+                  <label class="payment-item">
+                    <input
+                      type="radio"
+                      name="payment"
+                      aria-label="payment"
+                      required
+                    />
+                    <span class="mark"></span>
+                    <span class="text"> مدى </span>
+                    <div class="logos">
+                      <span>
+                        <img
+                          loading="lazy"
+                          src="../images/payments/4.png"
+                          alt="mada"
+                          class="img-contain"
+                        />
+                      </span>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <aside class="client_main-aside">
+              <h4 class="aside-title">إجمالي السلة</h4>
+              <div class="aside-totals">
+                <div class="total-item">
+                  <span class="title">عدد الأصناف</span>
+                  <strong class="value"> 5 </strong>
+                </div>
+                <div class="total-item">
+                  <span class="title">إجمالي المستحق بدون ضريبة</span>
+                  <strong class="value">
+                    150
+                    <img
+                      loading="lazy"
+                      src="../images/icons/sar.svg"
+                      alt="sar"
+                      class="svg"
+                    />
+                  </strong>
+                </div>
+                <div class="total-item">
+                  <span class="title">ضريبة القيمة المضافة 15%</span>
+                  <strong class="value">
+                    22.5
+                    <img
+                      loading="lazy"
+                      src="../images/icons/sar.svg"
+                      alt="sar"
+                      class="svg"
+                    />
+                  </strong>
+                </div>
+                <div class="total-item">
+                  <span class="title">رسوم الخدمة</span>
+                  <strong class="value">
+                    5
+                    <img
+                      loading="lazy"
+                      src="../images/icons/sar.svg"
+                      alt="sar"
+                      class="svg"
+                    />
+                  </strong>
+                </div>
+                <div class="total-item">
+                  <span class="title">إجمالي المستحق بعد الضريبة</span>
+                  <strong class="value">
+                    177.5
+                    <img
+                      loading="lazy"
+                      src="../images/icons/sar.svg"
+                      alt="sar"
+                      class="svg"
+                    />
+                  </strong>
+                </div>
+              </div>
+              <a
+                type="button"
+                data-bs-target="#successModal"
+                data-bs-toggle="modal"
+                class="aside-btn default-btn"
+              >
+                تأكيد الطلب والدفع
+              </a>
+            </aside>
+          </div>
+        </main>
+
+        <footer class="client-footer">
+          <p class="copyrights">تارا باي 2025 ©</p>
+          <p class="copyrights tasawk">
+            تطوير
+            <a
+              href="https://tasawk.com.sa"
+              target="_blank"
+              aria-label="tasawk link"
+            >
+              <img
+                loading="lazy"
+                src="../images/icons/tasawk.svg"
+                alt="tasawk"
+              />
+              تسوق لتقنية المعلومات
+            </a>
+          </p>
+        </footer>
+      </section>
+    </div>
+
+    <!-- Start Success Modal -->
+    <div
+      class="modal fade"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      id="successModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="modal-close" data-bs-dismiss="modal">
+              <i class="far fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span class="modal-icon success-icon">
+              <i class="fat fa-check-circle"></i>
+            </span>
+            <h2 class="modal-head">تم انشاء الطلب بنجاح</h2>
+            <p class="modal-description">
+              رقم الطلب هو #12345<br />
+              يرجى الانتظار لحين تجهيز الطلب وتقديمه في أقرب وقت ممكن. شكرًا
+              لانتظاركم
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Success Modal -->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/svg.js"></script>
+
+    <script>
+      $(".aside-btn").on("click", function () {
+        setTimeout(() => {
+          window.location.href = "./index.html";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>

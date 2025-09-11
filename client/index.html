@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق."
+    />
+    <title>TARA Bay Client | Menu</title>
+    <link rel="shortcut icon" type="img/png" href="../images/favicon.png" />
+    <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+
+  <body class="client-body">
+    <div class="container-fluid">
+      <section class="client-content">
+        <header class="client-header">
+          <a href="index.html" class="logo" aria-label="logo">
+            <img
+              loading="lazy"
+              src="../images/logo.svg"
+              alt="logo"
+              class="img-contain"
+            />
+          </a>
+          <div class="client_header-info">
+            <div class="info-item">
+              <span class="title">اسم الفرع</span>
+              <span class="value">R-3</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الطاولة</span>
+              <span class="value">7</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الطلب</span>
+              <span class="value">#123</span>
+            </div>
+            <div class="info-item">
+              <span class="title">اسم العميل</span>
+              <span class="value">عبدالله صالح</span>
+            </div>
+            <div class="info-item">
+              <span class="title">رقم الجوال</span>
+              <span class="value">
+                <a href="tel:0541234567">0541234567</a>
+              </span>
+            </div>
+          </div>
+          <div class="client_header-tools">
+            <a
+              href="#!"
+              class="header-icon language-icon"
+              aria-label="language icon"
+            >
+              <i class="fal fa-globe"></i>
+            </a>
+
+            <div class="client_account-info">
+              <span class="img">
+                <img
+                  loading="lazy"
+                  src="../images/users/1.jpg"
+                  alt="avatar"
+                  class="img-contain"
+                />
+              </span>
+              <span class="name">باربكيو تايم</span>
+            </div>
+          </div>
+        </header>
+
+        <main class="client-main">
+          <div class="client_main-row">
+            <div class="client_main-content">
+              <h1 class="client_main-title">قائمة الطعام</h1>
+              <div class="nav client_main-tabs">
+                <button
+                  type="button"
+                  class="active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-1"
+                >
+                  اللحوم المدخنة
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-2"
+                >
+                  البرجرات
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-3"
+                >
+                  المقبلات
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-4"
+                >
+                  السلطات
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-5"
+                >
+                  الساندويتشات
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-6"
+                >
+                  الأطباق الجانبية
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-7"
+                >
+                  الحلويات
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tab-8"
+                >
+                  المشروبات
+                </button>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="tab-1">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت مدخّن</span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-2">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">برجر بريسكت </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-3">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">مقبلات </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">مقبلات </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">مقبلات </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">مقبلات </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-4">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">سلطة </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-5">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">ساندوتش </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-6">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-7">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="tab-8">
+                  <div class="client_products-list">
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-item">
+                      <div class="img">
+                        <img
+                          loading="lazy"
+                          src="../images/products/1.jpg"
+                          alt="product"
+                          class="img-contain"
+                        />
+                      </div>
+                      <div class="info">
+                        <div class="text">
+                          <span class="title">طبق </span>
+                          <p class="desc">
+                            قطعة لحم بريسكت مدخنة على نار هادئة لمدة 12 ساعة،
+                            تُقدم مع صوص BBQ الخاص، خس، خيار مخلل وخبز بريوش
+                            طازج
+                          </p>
+                        </div>
+                        <strong class="price">
+                          30
+                          <img
+                            loading="lazy"
+                            src="../images/icons/sar.svg"
+                            alt="sar"
+                            class="svg"
+                          />
+                        </strong>
+                        <div class="quantity-content">
+                          <input
+                            type="number"
+                            class="form-control"
+                            required
+                            min="1"
+                            max="100"
+                            value="1"
+                            readonly
+                          />
+                          <button
+                            class="quantity-btn plus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                          >
+                            <i class="fal fa-plus-circle"></i>
+                          </button>
+                          <button
+                            class="quantity-btn minus-btn"
+                            type="button"
+                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                          >
+                            <i class="fal fa-minus-circle"></i>
+                          </button>
+                        </div>
+                        <button class="cart-btn">
+                          <i class="fal fa-shopping-cart"></i>
+                          <span>إضافة للسلة</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <aside class="client_main-aside">
+              <h4 class="aside-title">سلة المشتريات</h4>
+              <div class="aside-products">
+                <div class="aside_product-item">
+                  <div class="img">
+                    <img
+                      loading="lazy"
+                      src="../images/products/1.jpg"
+                      alt="product"
+                      class="img-contain"
+                    />
+                  </div>
+                  <div class="info">
+                    <span class="name">برجر بريسكت مدخّن</span>
+                    <div class="numbers">
+                      <span class="qty"> x5 </span>
+                      <span class="price">
+                        30
+                        <img
+                          loading="lazy"
+                          src="../images/icons/sar.svg"
+                          alt="sar"
+                          class="svg"
+                        />
+                      </span>
+                      <span class="price total">
+                        30
+                        <img
+                          loading="lazy"
+                          src="../images/icons/sar.svg"
+                          alt="sar"
+                          class="svg"
+                        />
+                      </span>
+                    </div>
+                    <a href="#!" class="remove">
+                      <i class="fal fa-trash-alt"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-totals">
+                <div class="total-item">
+                  <span class="title">عدد الأصناف</span>
+                  <strong class="value"> 5 </strong>
+                </div>
+                <div class="total-item">
+                  <span class="title">إجمالي الأصناف</span>
+                  <strong class="value">
+                    30
+                    <img
+                      loading="lazy"
+                      src="../images/icons/sar.svg"
+                      alt="sar"
+                      class="svg"
+                    />
+                  </strong>
+                </div>
+              </div>
+              <a href="cart.html" class="aside-btn default-btn">
+                عرض سلة الشراء
+              </a>
+            </aside>
+          </div>
+        </main>
+
+        <footer class="client-footer">
+          <p class="copyrights">تارا باي 2025 ©</p>
+          <p class="copyrights tasawk">
+            تطوير
+            <a
+              href="https://tasawk.com.sa"
+              target="_blank"
+              aria-label="tasawk link"
+            >
+              <img
+                loading="lazy"
+                src="../images/icons/tasawk.svg"
+                alt="tasawk"
+              />
+              تسوق لتقنية المعلومات
+            </a>
+          </p>
+        </footer>
+      </section>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/svg.js"></script>
+  </body>
+</html>

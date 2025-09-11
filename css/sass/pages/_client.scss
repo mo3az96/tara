@@ -1,0 +1,248 @@
+.client-main {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  overflow: hidden;
+  @include xl {
+    padding: 30px 30px 47px;
+  }
+  @include sm {
+    height: unset;
+    overflow: unset;
+  }
+  @include xs {
+    padding: 25px 15px;
+  }
+}
+
+.client_main-row {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  align-items: start;
+  gap: 40px;
+  max-height: 100%;
+  width: 100%;
+  @include xl {
+    gap: 93px;
+  }
+  @include md {
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+  }
+  @include sm {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.client_main-content {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // max-width: 856px;
+  .tab-content {
+    height: 100%;
+    > .tab-pane {
+      height: 100%;
+    }
+  }
+  .exclamation-hint {
+    margin-top: 20px;
+  }
+  @include sm {
+    height: unset;
+    overflow: unset;
+  }
+}
+.client_main-title {
+  color: $textColor;
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0 0;
+  @include xs {
+    margin-bottom: 20px;
+  }
+}
+.client_main-aside {
+  width: 100%;
+  background-color: #fef6f6;
+  padding: 25px 20px 20px;
+  border-radius: 10px;
+  overflow: hidden auto;
+  max-height: 100%;
+  scrollbar-width: unset;
+  scrollbar-color: unset;
+
+  &::-webkit-scrollbar {
+    background-color: #f0f0f0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+  }
+  .aside-title {
+    color: $primaryColor;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 0 10px;
+  }
+  .aside-products {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+    @include xl {
+      margin: 0 0 40px;
+    }
+  }
+
+  .aside_product-item {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f3dddd;
+    .img {
+      width: 50px;
+      aspect-ratio: 1;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .info {
+      width: 100%;
+    }
+    .name {
+      width: 100%;
+      font-size: 12px;
+      font-weight: 600;
+      color: $textColor;
+      padding-inline-end: 20px;
+      overflow: hidden;
+      display: block;
+      margin-bottom: 9px;
+    }
+    .numbers {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 8px;
+    }
+    .remove {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      inset-inline-end: 0;
+      top: 10px;
+      padding: 0;
+      @include focus(#a8a8a8);
+      cursor: pointer;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+    .qty {
+      font-size: 12px;
+      color: #a5a5a5;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 3px;
+      font-size: 12px;
+      font-weight: 700;
+      color: $textColor;
+      svg {
+        fill: currentColor;
+        width: 12px;
+      }
+    }
+    .total {
+      margin-inline-start: auto;
+      font-size: 14px;
+      font-weight: 700;
+      color: $primaryColor;
+      svg {
+        width: 14px;
+      }
+    }
+  }
+  .aside-totals {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+  .total-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: $textColor;
+    .value {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      gap: 3px;
+      svg {
+        fill: currentColor;
+        width: 14px;
+        @include sm {
+          width: 12px;
+        }
+      }
+    }
+  }
+  .aside-btn {
+    width: 100%;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.client_checkout-content {
+  max-height: 100%;
+  overflow: hidden auto;
+  scrollbar-width: unset;
+  scrollbar-color: unset;
+  &::-webkit-scrollbar {
+    background-color: #f0f0f0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+  }
+  .client_checkout-title {
+    color: $textColor;
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 0 20px;
+  }
+  .client_products-list {
+    margin-bottom: 35px;
+  }
+
+  .payment-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    @include xs {
+      grid-template-columns: 1fr;
+    }
+  }
+  @include sm {
+    overflow: unset;
+    max-height: unset;
+  }
+}

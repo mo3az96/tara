@@ -15,12 +15,14 @@
 @import "sass/objects/payment";
 @import "sass/objects/modal";
 @import "sass/objects/table";
+@import "sass/objects/tabs";
 
 @import "sass/components/main";
 @import "sass/components/about";
 @import "sass/components/features";
 @import "sass/components/testimonials";
 @import "sass/components/banner";
+@import "sass/components/products";
 
 @import "sass/layout/header";
 @import "sass/layout/navbar";
@@ -30,6 +32,7 @@
 @import "sass/layout/dashboard";
 @import "sass/layout/account";
 @import "sass/layout/bradcrumb";
+@import "sass/layout/client";
 
 @import "sass/pages/home";
 @import "sass/pages/about";
@@ -47,3 +50,5 @@
 @import "sass/pages/dashboard";
 @import "sass/pages/notifications";
 @import "sass/pages/dashboard_form";
+
+@import "sass/pages/client";

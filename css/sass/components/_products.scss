@@ -1,0 +1,213 @@
+.client_products-list {
+  max-height: 100%;
+  overflow-y: auto;
+  scrollbar-width: unset;
+  scrollbar-color: unset;
+  margin-top: 20px;
+  &::-webkit-scrollbar {
+    background-color: #f0f0f0;
+    width: 0;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d0d0d0;
+  }
+  @include sm {
+    max-height: 470px;
+    margin-top: 0;
+  }
+}
+.product-item {
+  padding: 20px 0;
+  gap: 20px;
+  border-bottom: 1px solid #d5d5d5;
+  display: flex;
+  align-items: start;
+  position: relative;
+  &:first-of-type {
+    padding-top: 0;
+  }
+  @include sm {
+    &:first-of-type {
+      padding-top: 20px;
+    }
+  }
+  @include xs {
+    padding: 10px 0;
+    gap: 10px;
+    &:first-of-type {
+      padding-top: 10px;
+    }
+  }
+  .img {
+    flex-shrink: 0;
+    width: 63px;
+    aspect-ratio: 1;
+    overflow: hidden;
+    @include xs {
+      width: 50px;
+    }
+  }
+  .info {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    @include xs {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+  .text {
+    width: 100%;
+    max-width: 305px;
+    margin-inline-end: auto;
+    @include md {
+      max-width: 200px;
+    }
+    @include sm {
+      max-width: 305px;
+    }
+    @include xs {
+      max-width: 100%;
+    }
+  }
+  .title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $textColor;
+    margin: 0 0 5px;
+  }
+  .desc {
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5a5a5;
+    margin: 0;
+  }
+  .price {
+    font-size: 16px;
+    line-height: 1.625;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 700;
+    color: $primaryColor;
+    gap: 3px;
+    width: 55px;
+    margin-inline-end: 20px;
+    svg {
+      fill: currentColor;
+      width: 14px;
+    }
+    @include xl {
+      margin-inline-end: 40px;
+    }
+    @include xs {
+      margin: 0;
+      width: auto;
+      margin-inline-end: auto;
+    }
+  }
+
+  .quantity-content {
+    width: 115px;
+    .form-control {
+      height: 40px;
+    }
+    .quantity-btn {
+      font-size: 20px;
+      --postion: 11px;
+    }
+  }
+  .cart-btn {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 20px;
+    min-width: 115px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: $primaryColor;
+    font-size: 14px;
+    font-weight: 700;
+    @include focus(#fff);
+    i {
+      font-size: 16px;
+      display: none;
+    }
+    &:hover {
+      background-color: $secondaryColor;
+      color: #fff;
+    }
+    @include md {
+      padding: 0 0;
+      min-width: unset;
+      width: 40px;
+      span {
+        display: none;
+      }
+      i {
+        display: flex;
+      }
+    }
+  }
+  .remove {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    @include focus(#a8a8a8);
+    cursor: pointer;
+    &:hover {
+      color: $primaryColor;
+    }
+    @include xs {
+      position: absolute;
+      top: 10px;
+      inset-inline-end: 0;
+      font-size: 16px;
+    }
+  }
+  .cart-products & {
+    .info {
+      gap: 30px;
+      @include md {
+        gap: 10px;
+      }
+    }
+    .price {
+      color: $textColor;
+      justify-content: start;
+      margin: 0;
+      @include xs {
+        margin-inline-end: auto;
+      }
+    }
+    .total {
+      color: $primaryColor;
+      justify-content: end;
+      @include xs {
+        display: none;
+      }
+    }
+  }
+  &:has(.remove) {
+    .title {
+      @include xs {
+        padding-inline-end: 20px;
+      }
+    }
+  }
+  &:not(:has(.img)) {
+    .info {
+      align-items: center;
+    }
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}

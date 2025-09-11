@@ -1,0 +1,171 @@
+.client-body {
+  background-color: #f8f8f8;
+}
+
+.client-content {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  gap: 30px;
+  padding: 30px 0;
+  @include sm {
+    height: unset;
+  }
+  @include xs {
+    gap: 20px;
+    padding: 20px 0 30px;
+  }
+}
+
+.client-header {
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  padding: 18px 30px;
+  gap: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  .header-icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    @include focus($textColor);
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      @include sm {
+        display: none;
+      }
+    }
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  @include md {
+    gap: 15px 40px;
+  }
+  @include sm {
+    padding: 10px 20px;
+  }
+  @include xs {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.client_header-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  @include cus-lg {
+    gap: 20px;
+  }
+  @include sm {
+    gap: 15px;
+  }
+  @include xs {
+    gap: 5px 25px;
+    width: 100%;
+    flex-wrap: wrap;
+    order: 3;
+  }
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    @include xs {
+      // text-align: center;
+      flex: 1;
+      white-space: nowrap;
+      // min-width: calc(100% / 3 - 20px);
+    }
+  }
+  .title {
+    color: $textColor;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.58334;
+  }
+  .value {
+    color: #b8b8b8;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.714;
+    a {
+      direction: ltr;
+      @include focus(inherit);
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}
+
+.client_header-tools {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+  margin-inline-start: auto;
+  @include cus-lg {
+    gap: 20px;
+  }
+  @include sm {
+    gap: 20px;
+  }
+  @include xs {
+    gap: 25px;
+  }
+}
+
+.client-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  line-height: 1.6364;
+  margin-top: auto;
+  flex-shrink: 0;
+  @include xl {
+    padding-top: 20px;
+  }
+  @include xs {
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 20px;
+  }
+  .copyrights {
+    color: #787878;
+    font-size: 11px;
+    margin: 0;
+  }
+  .tasawk {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 600;
+      @include focus(#787878);
+      img {
+        width: 12px;
+      }
+      &:hover {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
