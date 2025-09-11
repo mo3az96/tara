@@ -3794,6 +3794,11 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
 .head-with-btn .dashboard_page-title {
   margin-bottom: 0;
 }
+@media (max-width: 767px) {
+  .head-with-btn .dashboard_page-title {
+    font-size: 18px;
+  }
+}
 
 .dashboard_head-btn {
   display: flex;
@@ -3816,6 +3821,13 @@ html[dir=ltr] .dashboard_sidebar-menu .sidebar_menu-link::after {
 .dashboard_head-btn:hover {
   background-color: #DC2829;
   color: #fff;
+}
+@media (max-width: 767px) {
+  .dashboard_head-btn {
+    height: 40px;
+    font-size: 12px;
+    padding: 0 20px;
+  }
 }
 
 .dashboard-footer {
